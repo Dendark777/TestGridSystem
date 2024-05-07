@@ -15,57 +15,15 @@ public class GridManager : MonoBehaviour
 
     private Node[] _nodes;
     private Node[,] _mapData;
-    //private SaveLoadMap _saveLoadMap;
 
     void Awake()
     {
         _nodes = _map.GetComponentsInChildren<Node>();
-        //_grid = GetComponent<GridMap>();
-        //_saveLoadMap = GetComponent<SaveLoadMap>();
-
-        //_tilemap.ClearAllTiles();
-        //_saveLoadMap.Load(_grid);
-
-        //UpdateTileMap();
     }
-
-    //private void UpdateTileMap()
-    //{
-    //    for (int x = 0; x < _grid.Width; x++)
-    //    {
-    //        for (int y = 0; y < _grid.Height; y++)
-    //        {
-    //            UpdateTile(x, y);
-    //        }
-    //    }
-    //}
-
-    //private void UpdateTile(int x, int y)
-    //{
-    //    var tile = _grid.GetTile(x, y);
-    //    if (tile == null)
-    //    {
-    //        return;
-    //    }
-    //    //_map.SetTile(new Vector3Int(x, y, 0), _tileSet.GetTile(tile));
-    //}
-
-    //public void Set(int x, int y, int to)
-    //{
-    //    _grid.SetTile(x, y, to);
-    //    UpdateTile(x, y);
-
-    //}
 
     public Node[,] ReadTileMap()
     {
-        //if (_map == null)
-        //{
-        //    _map = GetComponent<Tilemap>();
-        //}
 
-        //int sizeX = _map.size.x;
-        //int sizeY = _map.size.y;
         if (_mapData != null)
         {
             return _mapData;
@@ -94,28 +52,6 @@ public class GridManager : MonoBehaviour
         }
         return _mapData;
     }
-
-    //internal void SetTile(int x, int y, Node node)
-    //{
-    //    if (node == null)
-    //    {
-    //        return;
-    //    }
-    //    if (_map == null)
-    //    {
-    //        _map = GetComponent<Tilemap>();
-    //    }
-    //    _map.SetTile(new Vector3Int(x, y, 0), _tileSet.GetTile(node));
-    //}
-
-    //internal void Clear()
-    //{
-    //    if (_map == null)
-    //    {
-    //        _map = GetComponent<Tilemap>();
-    //    }
-    //    _map.ClearAllTiles();
-    //}
 
     public Node GetNode(int x, int y)
     {

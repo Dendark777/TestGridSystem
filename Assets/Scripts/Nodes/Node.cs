@@ -10,10 +10,26 @@ using UnityEngine.UIElements;
 
 namespace Assets.Scripts.Nodes
 {
+    public readonly struct Point
+    {
+        public int X { get; }
+        public int Y { get; }
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+
+    }
+
     public class Node : MonoBehaviour
     {
         [SerializeField]
         private TileType[] _tileTypes;
+        [SerializeField]
+        private bool[] _canStep;
+        public bool[] CanStaep => _canStep;
         public int PosX { get; set; }
         public int PosY { get; set; }
         public TileType[] TileTypes 
@@ -21,7 +37,7 @@ namespace Assets.Scripts.Nodes
             get => _tileTypes;
             set => _tileTypes = value;
         }
-        public Character Character { get; set; }
+        public Character Character;
         public delegate void ClickAction(GameObject clickedObject);
         public static event ClickAction OnNodeLeftClicked;
         public static event ClickAction OnNodeRightClicked;
@@ -31,34 +47,20 @@ namespace Assets.Scripts.Nodes
             PosY = y;
         }
 
-        public Node InitNewNode(int x, int y)
+        public List<Point> GetPointsNeighbour()
         {
-            return new Node
+            var points = new List<Point>();
+            for (int i = 0; i < _canStep.Length; i++)
             {
-                PosX = x,
-                PosY = y,
-                TileTypes = TileTypes
-            };
+                if (!_canStep[i])
+                {
+                    continue;
+                }
+                points.Add(Neighbours.Points[i]);
+            }
+            return points;
         }
 
-        //void OnMouseDown()
-        //{
-        //    if (Input.GetMouseButtonDown(0))
-        //    {
-        //        Debug.Log("Left mouse button clicked");
-        //    }
-        //    else if (Input.GetMouseButtonDown(1))
-        //    {
-        //        Debug.Log("Right mouse button clicked");
-        //    }
-        //    else if (Input.GetMouseButtonDown(2))
-        //    {
-        //        Debug.Log("Middle mouse button clicked");
-        //    }
-        //    // Проверка, есть ли подписчики на событие
-        //    // Вызов события и передача этому событию ссылки на текущий объект
-        //    OnNodeLeftClicked?.Invoke(gameObject);
-        //}
         void OnMouseOver()
         {
             if (Input.GetMouseButtonDown(0))

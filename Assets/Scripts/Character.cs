@@ -7,14 +7,18 @@ using static Assets.Scripts.Nodes.Node;
 public class Character : MonoBehaviour
 {
     [SerializeField]
-    private int _moveDistance = 4;
+    private int _health;
+    [SerializeField]
+    private int _countAction = 2;
+    [SerializeField]
+    private int _moveDistance = 2;
     [SerializeField]
     private string _name;
     [SerializeField]
     private Node _node;
     public Node Node => _node;
     public string Name => _name;
-    public int MoveDistance => _moveDistance;
+    public int MoveDistance => _moveDistance * _countAction;
 
     public static event ClickAction OnLeftClicked;
 
@@ -28,6 +32,8 @@ public class Character : MonoBehaviour
     {
         _node = node;
     }
+
+
 
     void OnMouseDown()
     {

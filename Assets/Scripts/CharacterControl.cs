@@ -35,6 +35,7 @@ public class CharacterControl : MonoBehaviour
         highLghitCells.Init();
         selectedCharacter.Init(StartNode);
         Node.OnNodeLeftClicked += ClickOnCellMouseLeft;
+        Node.OnNodeRightClicked+= ClickOnCellMouseRight;
         Character.OnLeftClicked += ClickOnCharacterMouseLeft;
     }
 
@@ -105,8 +106,12 @@ public class CharacterControl : MonoBehaviour
         var nodeClicked = clickedObject.GetComponent<Node>();
         if (selectedCharacter == null)
         {
-            Debug.Log("Не выбран герой");
-            return;
+            selectedCharacter = nodeClicked.Character;
+            if (selectedCharacter == null)
+            {
+                Debug.Log("Не выбран герой");
+                return;
+            }
         }
         if (path != null)
         {
@@ -142,7 +147,7 @@ public class CharacterControl : MonoBehaviour
         try
         {
             targetIndex = path.Count - 1;
-            currentWaypoint = path[path.Count - 1].GetPosition();
+            currentWaypoint = path[targetIndex].GetPosition();
             movining = true;
             Animator.SetBool("Moving", movining);
             RoteateHero(currentWaypoint);
@@ -162,6 +167,8 @@ public class CharacterControl : MonoBehaviour
                 {
                     var node = gridManager.GetNode(path[0].xPos, path[0].yPos);
                     selectedCharacter.SetNode(node);
+                    node.Character = selectedCharacter;
+                    pathfinding.Clear();
                     movining = false;
                     path = null;
                     highLghitCells.ResetAllHighLightCell();

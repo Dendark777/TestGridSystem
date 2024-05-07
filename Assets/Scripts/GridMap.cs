@@ -45,7 +45,7 @@ public class GridMap : MonoBehaviour
         _grid[x, y] = node;
     }
 
-    public Node GetTile(int x, int y)
+    public Node GetNode(int x, int y)
     {
         if (!CheckPosition(x, y))
         {

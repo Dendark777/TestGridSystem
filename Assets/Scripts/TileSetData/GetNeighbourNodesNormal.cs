@@ -16,7 +16,7 @@ namespace Assets.Scripts.TileSetData
         {
             try
             {
-                var tileType = gridMap.GetTile(currentNode.xPos + x, currentNode.yPos + y).TileTypes[0];
+                var tileType = gridMap.GetNode(currentNode.xPos + x, currentNode.yPos + y).TileTypes[0];
                 switch (tileType)
                 {
                     case TileType.WallUp:

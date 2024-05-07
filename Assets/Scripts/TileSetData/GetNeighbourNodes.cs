@@ -17,9 +17,6 @@ namespace Assets.Scripts.TileSetData
 
         public virtual bool CheckNeighbourNode(int x, int y, PathNode currentNode, GridMap gridMap)
         {
-            //var tileId = gridMap.GetTile(currentNode.xPos + x, currentNode.yPos + y);
-            //if (y == -1)
-            //    return true;
             if (x == 0 && y == 0)
                 return true;
             if (!gridMap.CheckPosition(currentNode.xPos + x, currentNode.yPos + y))

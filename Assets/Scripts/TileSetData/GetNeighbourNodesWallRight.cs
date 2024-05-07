@@ -18,13 +18,13 @@ namespace Assets.Scripts.TileSetData
             {
                 if (y == 0)
                     return true;
-                var tileTypes = gridMap.GetTile(currentNode.xPos, currentNode.yPos + y).TileTypes;
+                var tileTypes = gridMap.GetNode(currentNode.xPos, currentNode.yPos + y).TileTypes;
                 if (tileTypes.Contains(TileType.WallRight))
                     return true;
             }
             if (x == -1)
             {
-                var tileTypes = gridMap.GetTile(currentNode.xPos + x, currentNode.yPos + y).TileTypes;
+                var tileTypes = gridMap.GetNode(currentNode.xPos + x, currentNode.yPos + y).TileTypes;
                 if (tileTypes.Contains(TileType.WallRight))
                     return true;
             }

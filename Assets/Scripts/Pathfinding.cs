@@ -34,7 +34,7 @@ public class PathNode
 public class Pathfinding : MonoBehaviour
 {
     GridMap gridMap;
-    PathNode[,] pathNodes;
+    public PathNode[,] pathNodes;
     private void Start()
     {
         Init();
@@ -104,26 +104,23 @@ public class Pathfinding : MonoBehaviour
 
     private List<PathNode> GetNeighbourNodes(PathNode currentNode)
     {
-        var tileType = gridMap.GetTile(currentNode.xPos, currentNode.yPos).TileTypes[0];
-        GetNeighbourNodes check = NodesTypeCheck.TypeChecks[tileType];
+        //var tileType = gridMap.GetNode(currentNode.xPos, currentNode.yPos).TileTypes[0];
+        //GetNeighbourNodes check = NodesTypeCheck.TypeChecks[tileType];
+        var neighboursPoints = gridMap.GetNode(currentNode.xPos, currentNode.yPos).GetPointsNeighbour();
         List<PathNode> neighbourNodes = new List<PathNode>();
+        int posX;
+        int posY;
         try
         {
-
-            for (int x = -1; x < 2; x++)
+            foreach (var neighbor in neighboursPoints)
             {
-                for (int y = -1; y < 2; y++)
-                {
-                    //Y вертикаль
-                    //X горизонталь
-                    if (x == 0 && y == 0)
-                        continue;
-                    if (!gridMap.CheckPosition(currentNode.xPos + x, currentNode.yPos + y))
-                        continue;
-                    if (check.CheckNeighbourNode(x, y, currentNode, gridMap))
-                        continue;
-                    neighbourNodes.Add(pathNodes[currentNode.xPos + x, currentNode.yPos + y]);
-                }
+                //Y вертикаль
+                //X горизонталь
+                posX = currentNode.xPos + neighbor.X;
+                posY = currentNode.yPos + neighbor.Y;
+                if (!gridMap.CheckPosition(posX, posY))
+                    continue;
+                neighbourNodes.Add(pathNodes[posX, posY]);
             }
         }
         catch (Exception e)
@@ -131,20 +128,6 @@ public class Pathfinding : MonoBehaviour
             print(e);
         }
         return neighbourNodes;
-    }
-
-    private List<PathNode> RetracePath(PathNode startNode, PathNode endNode)
-    {
-        List<PathNode> path = new List<PathNode>();
-
-        PathNode currentNode = endNode;
-        while (currentNode != startNode)
-        {
-            path.Add(currentNode);
-            currentNode = currentNode.parentNode;
-        }
-        path.Reverse();
-        return path;
     }
 
     private int CalculateDistance(PathNode current, PathNode target)
