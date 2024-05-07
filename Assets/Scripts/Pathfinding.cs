@@ -102,67 +102,6 @@ public class Pathfinding : MonoBehaviour
         toHighlight?.AddRange(closedList);
     }
 
-
-    //public List<PathNode> FindPath(int startX, int startY, int endX, int endY)
-    //{
-    //    PathNode startNode = pathNodes[startX, startY];
-    //    PathNode endNode = pathNodes[endX, endY];
-
-    //    List<PathNode> openList = new List<PathNode>();
-    //    List<PathNode> closedList = new List<PathNode>();
-
-    //    openList.Add(startNode);
-    //    while (openList.Count > 0)
-    //    {
-    //        PathNode currentNode = openList[0];
-    //        for (int i = 0; i < openList.Count; i++)
-    //        {
-    //            if (currentNode.FValue > openList[i].FValue)
-    //            {
-    //                currentNode = openList[i];
-    //            }
-    //            if (currentNode.FValue == openList[i].FValue
-    //                && currentNode.hValue > openList[i].hValue)
-    //            {
-    //                currentNode = openList[i];
-    //            }
-    //        }
-    //        openList.Remove(currentNode);
-    //        closedList.Add(currentNode);
-
-    //        if (currentNode == endNode)
-    //        {
-    //            return RetracePath(startNode, endNode);
-    //        }
-    //        List<PathNode> neighbourNodes = GetNeighbourNodes(currentNode);
-    //        for (int i = 0; i < neighbourNodes.Count; i++)
-    //        {
-    //            if (closedList.Contains(neighbourNodes[i]))
-    //            {
-    //                continue;
-    //            }
-    //            if (!gridMap.CheckWalkable(neighbourNodes[i].xPos, neighbourNodes[i].yPos))
-    //            {
-    //                continue;
-    //            }
-    //            int movementCoast = currentNode.gValue + CalculateDistance(currentNode, neighbourNodes[i]);
-
-    //            if (!openList.Contains(neighbourNodes[i])
-    //                || movementCoast < neighbourNodes[i].gValue)
-    //            {
-    //                neighbourNodes[i].gValue = movementCoast;
-    //                neighbourNodes[i].hValue = CalculateDistance(neighbourNodes[i], endNode);
-    //                neighbourNodes[i].parentNode = currentNode;
-    //                if (!openList.Contains(neighbourNodes[i]))
-    //                {
-    //                    openList.Add(neighbourNodes[i]);
-    //                }
-    //            }
-    //        }
-    //    }
-    //    return null;
-    //}
-
     private List<PathNode> GetNeighbourNodes(PathNode currentNode)
     {
         var tileType = gridMap.GetTile(currentNode.xPos, currentNode.yPos).TileTypes[0];

@@ -32,11 +32,9 @@ public class CharacterControl : MonoBehaviour
     private bool movining = false;
     private void Awake()
     {
-        //pathfinding = targetTileMap.GetComponent<Pathfinding>();
         highLghitCells.Init();
         selectedCharacter.Init(StartNode);
         Node.OnNodeLeftClicked += ClickOnCellMouseLeft;
-        //Node.OnNodeRightClicked += ClickOnCellMouseRight;
         Character.OnLeftClicked += ClickOnCharacterMouseLeft;
     }
 
