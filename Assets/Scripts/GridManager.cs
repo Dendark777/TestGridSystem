@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using Assets.Scripts.Nodes;
 using System;
 using System.Collections;
@@ -28,8 +29,8 @@ public class GridManager : MonoBehaviour
         {
             return _mapData;
         }
-        int sizeX = 24;
-        int sizeY = 20;
+        int sizeX = Constants.MapSizeX;
+        int sizeY = Constants.MapSizeY;
         Debug.Log($"{sizeX} {sizeY}");
         _mapData = new Node[sizeX, sizeY];
 
@@ -56,6 +57,12 @@ public class GridManager : MonoBehaviour
     public Node GetNode(int x, int y)
     {
         return _mapData[x, y];
+    }
+    
+    public Node GetRandomNode()
+    {
+        var r = new  Unity.Mathematics.Random();
+        return _mapData[r.NextInt(Constants.MapSizeX), r.NextInt(Constants.MapSizeY)];
     }
 
     public Character GetCharacter(int x, int y)

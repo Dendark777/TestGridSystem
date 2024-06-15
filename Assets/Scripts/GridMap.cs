@@ -16,24 +16,14 @@ public class GridMap : MonoBehaviour
     public Node[,] _grid;
     private void Awake()
     {
+        InitGrid();
+    }
+    public void InitGrid()
+    {
         _grid = gridManager.ReadTileMap();
 
         Width = _grid.GetLength(0);// Метод для получения ширины массива
         Height = _grid.GetLength(1);// Метод для получения высоты массива
-    }
-    public void Init(int height, int width)
-    {
-        _grid = new Node[width, height];
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                _grid[x, y] = new Node();
-            }
-        }
-
-        Height = height;
-        Width = width;
     }
 
     public void SetTile(int x, int y, Node node)
@@ -83,6 +73,10 @@ public class GridMap : MonoBehaviour
     internal void SetCharacter(MapElement mapElement, int xPos, int yPos)
     {
         var c = mapElement.GetComponent<Character>();
+        if (_grid[xPos, yPos] == null)
+        {
+            InitGrid();
+        }
         _grid[xPos, yPos].Character = c;
     }
 
