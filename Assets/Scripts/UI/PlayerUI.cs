@@ -14,7 +14,7 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private Player _cuurentPlayer;
         [SerializeField]
-        private Character _currentCharacter;
+        private ChipBase _currentChip;
         [SerializeField]
         private TextMeshProUGUI _textMesh;
 

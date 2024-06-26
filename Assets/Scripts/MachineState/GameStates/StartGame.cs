@@ -11,7 +11,7 @@ namespace Assets.Scripts.MachineState.GameStates
         private GridManager _gridManager;
         public void EnterState()
         {
-            var _nodes = _gridManager.ReadTileMap();
+             
         }
 
         public void ExitState()

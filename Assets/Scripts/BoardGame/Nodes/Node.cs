@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.TileSetData;
+﻿using Assets.Scripts.Players;
+using Assets.Scripts.TileSetData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace Assets.Scripts.Nodes
         private TileType[] _tileTypes;
         [SerializeField]
         private bool[] _canStep;
-        public bool[] CanStaep => _canStep;
+        public bool[] CanStep => _canStep;
         public int PosX { get; set; }
         public int PosY { get; set; }
         public TileType[] TileTypes 
@@ -37,7 +38,7 @@ namespace Assets.Scripts.Nodes
             get => _tileTypes;
             set => _tileTypes = value;
         }
-        public Character Character;
+        public ChipBase Chip;
         public delegate void ClickAction(GameObject clickedObject);
         public static event ClickAction OnNodeLeftClicked;
         public static event ClickAction OnNodeRightClicked;

@@ -12,9 +12,11 @@ namespace Assets.Scripts.Players
     {
         public string Name { get; set; }
         public Color Color { get; set; }
-        public List<GameCharacter> Characters { get; set; }
+        public CharacterControl CharacterControl { get; set; }
+        public bool IsPlaying { get; set; }
+        public List<ChipBase> Characters { get; set; }
 
-        public Player(string name, Color color, List<GameCharacter> characters)
+        public Player(string name, Color color, List<ChipBase> characters)
         {
             Name = name;
             Color = color;

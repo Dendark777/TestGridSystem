@@ -6,7 +6,6 @@ using UnityEngine;
 public class MapElement : MonoBehaviour
 {
     GridMap gridMap;
-    // Start is called before the first frame update
     void Start()
     {
         SetGrid();

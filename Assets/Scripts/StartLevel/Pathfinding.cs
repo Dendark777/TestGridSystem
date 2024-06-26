@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using Assets.Scripts.Nodes;
 using Assets.Scripts.TileSetData;
 using System;
@@ -30,28 +31,20 @@ public class PathNode
     public Vector3 GetPosition() { return new Vector3(xPos, yPos, 0); }
 }
 
-[RequireComponent(typeof(GridMap))]
-public class Pathfinding : MonoBehaviour
+public class Pathfinding
 {
-    GridMap gridMap;
-    public PathNode[,] pathNodes;
-    private void Start()
-    {
-        Init();
-    }
+    private readonly GridManager _gridManager;
+    private readonly PathNode[,] _pathNodes;
 
-    private void Init()
+    public Pathfinding(GridManager gridManager)
     {
-        if (gridMap == null)
+        _gridManager = gridManager;
+        _pathNodes = new PathNode[Constants.MapSizeX, Constants.MapSizeY];
+        for (int x = 0; x < Constants.MapSizeX; x++)
         {
-            gridMap = GetComponent<GridMap>();
-        }
-        pathNodes = new PathNode[gridMap.Width, gridMap.Height];
-        for (int x = 0; x < gridMap.Width; x++)
-        {
-            for (int y = 0; y < gridMap.Height; y++)
+            for (int y = 0; y < Constants.MapSizeY; y++)
             {
-                pathNodes[x, y] = new PathNode(x, y);
+                _pathNodes[x, y] = new PathNode(x, y);
             }
         }
     }
@@ -60,7 +53,7 @@ public class Pathfinding : MonoBehaviour
     {
         range *= 10;
 
-        PathNode starNode = pathNodes[startNode.PosX, startNode.PosY];
+        PathNode starNode = _pathNodes[startNode.PosX, startNode.PosY];
 
         List<PathNode> openList = new List<PathNode>();
         List<PathNode> closedList = new List<PathNode>();
@@ -70,8 +63,6 @@ public class Pathfinding : MonoBehaviour
         while (openList.Count > 0)
         {
             PathNode currentNode = openList[0];
-
-
             openList.Remove(currentNode);
             closedList.Add(currentNode);
 
@@ -80,7 +71,7 @@ public class Pathfinding : MonoBehaviour
             {
                 if (closedList.Contains(neighbors[i]))
                     continue;
-                if (!gridMap.CheckWalkable(neighbors[i].xPos, neighbors[i].yPos))
+                if (!_gridManager.CheckWalkable(neighbors[i].xPos, neighbors[i].yPos))
                     continue;
 
                 int moveCost = currentNode.gValue + CalculateDistance(currentNode, neighbors[i]);
@@ -104,9 +95,7 @@ public class Pathfinding : MonoBehaviour
 
     private List<PathNode> GetNeighbourNodes(PathNode currentNode)
     {
-        //var tileType = gridMap.GetNode(currentNode.xPos, currentNode.yPos).TileTypes[0];
-        //GetNeighbourNodes check = NodesTypeCheck.TypeChecks[tileType];
-        var neighboursPoints = gridMap.GetNode(currentNode.xPos, currentNode.yPos).GetPointsNeighbour();
+        var neighboursPoints = _gridManager.GetNode(currentNode.xPos, currentNode.yPos).GetPointsNeighbour();
         List<PathNode> neighbourNodes = new List<PathNode>();
         int posX;
         int posY;
@@ -118,14 +107,14 @@ public class Pathfinding : MonoBehaviour
                 //X горизонталь
                 posX = currentNode.xPos + neighbor.X;
                 posY = currentNode.yPos + neighbor.Y;
-                if (!gridMap.CheckPosition(posX, posY))
+                if (!_gridManager.CheckPosition(posX, posY))
                     continue;
-                neighbourNodes.Add(pathNodes[posX, posY]);
+                neighbourNodes.Add(_pathNodes[posX, posY]);
             }
         }
         catch (Exception e)
         {
-            print(e);
+            Debug.LogException(e);
         }
         return neighbourNodes;
     }
@@ -145,7 +134,7 @@ public class Pathfinding : MonoBehaviour
     public List<PathNode> TrackBackPath(int x, int y)
     {
         List<PathNode> path = new List<PathNode>();
-        PathNode currentNode = pathNodes[x, y];
+        PathNode currentNode = _pathNodes[x, y];
 
         while (currentNode.parentNode != null)
         {
@@ -155,21 +144,17 @@ public class Pathfinding : MonoBehaviour
         return path;
     }
 
-    internal void Clear()
+    public void Clear()
     {
-        for (int x = 0; x < gridMap.Width; x++)
+        foreach (PathNode currentNode in _pathNodes)
         {
-            for (int y = 0; y < gridMap.Height; y++)
+            try
             {
-                try
-                {
-                    pathNodes[x, y].Clear();
-                }
-                catch (Exception)
-                {
-
-                    print($"x={x} y={y}");
-                }
+                currentNode.Clear();
+            }
+            catch (Exception)
+            {
+                Debug.LogError($"x={currentNode.xPos} y={currentNode.yPos}");
             }
         }
     }

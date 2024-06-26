@@ -15,7 +15,7 @@ namespace Assets.Scripts
         private List<Player> _players;
         [SerializeField]
         private Player _curentPlayer;
-        private IState currentState;
+        private IState _currentState;
         public static GameManager Instance;
 
         private void Awake()

@@ -1,4 +1,6 @@
+using Assets.Scripts;
 using Assets.Scripts.Nodes;
+using Assets.Scripts.Players;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,33 +12,26 @@ using UnityEngine.Tilemaps;
 public class CharacterControl : MonoBehaviour
 {
     [SerializeField]
-    Tilemap targetTileMap;
-    [SerializeField]
     GridManager gridManager;
     [SerializeField]
     HighLightCell highLghitCells;
-    [SerializeField]
-    Transform Hero;
-    [SerializeField]
-    Animator Animator;
-    [SerializeField]
-    Character selectedCharacter;
-    [SerializeField]
-    Node StartNode;
 
     [SerializeField]
+    ChipBase selectedChip;
+    [SerializeField]
+    Node StartNode; //Пока для быстрого спауна
+
     Pathfinding pathfinding;
     List<PathNode> path;
-    public float moveSpeed = 20f;
-    private int targetIndex = 0;
     private bool movining = false;
     private void Awake()
     {
         highLghitCells.Init();
-        selectedCharacter.Init(StartNode);
+        selectedChip.Init(StartNode);
+        pathfinding = new Pathfinding(gridManager);
         Node.OnNodeLeftClicked += ClickOnCellMouseLeft;
-        Node.OnNodeRightClicked+= ClickOnCellMouseRight;
-        Character.OnLeftClicked += ClickOnCharacterMouseLeft;
+        Node.OnNodeRightClicked += ClickOnCellMouseRight;
+        ChipBase.OnLeftClicked += ClickOnCharacterMouseLeft;
     }
 
     private void ClickOnCharacterMouseLeft(GameObject clickedObject)
@@ -45,11 +40,11 @@ public class CharacterControl : MonoBehaviour
         {
             return;
         }
-        if (!clickedObject.TryGetComponent<Character>(out selectedCharacter))
+        if (!clickedObject.TryGetComponent<ChipBase>(out selectedChip))
         {
             return;
         }
-        var nodeClicked = selectedCharacter.Node;
+        var nodeClicked = selectedChip.Node;
         path = null;
 
         if (!gridManager.CheckPosition(nodeClicked.PosX, nodeClicked.PosY))
@@ -59,8 +54,8 @@ public class CharacterControl : MonoBehaviour
 
         List<PathNode> toHighlight = new List<PathNode>();
         pathfinding.Clear();
-        pathfinding.CalculateWalkableTerrain(selectedCharacter.Node,
-                                             selectedCharacter.MoveDistance,
+        pathfinding.CalculateWalkableTerrain(selectedChip.Node,
+                                             selectedChip.MaxCellMove,
                                              ref toHighlight);
         for (int i = 0; i < toHighlight.Count; i++)
         {
@@ -82,12 +77,12 @@ public class CharacterControl : MonoBehaviour
         {
             return;
         }
-        if (selectedCharacter != null)
+        if (selectedChip != null)
         {
             List<PathNode> toHighlight = new List<PathNode>();
             pathfinding.Clear();
-            pathfinding.CalculateWalkableTerrain(selectedCharacter.Node,
-                                                 selectedCharacter.MoveDistance,
+            pathfinding.CalculateWalkableTerrain(selectedChip.Node,
+                                                 selectedChip.MaxCellMove,
                                                  ref toHighlight);
             for (int i = 0; i < toHighlight.Count; i++)
             {
@@ -104,10 +99,10 @@ public class CharacterControl : MonoBehaviour
             return;
         }
         var nodeClicked = clickedObject.GetComponent<Node>();
-        if (selectedCharacter == null)
+        if (selectedChip == null)
         {
-            selectedCharacter = nodeClicked.Character;
-            if (selectedCharacter == null)
+            selectedChip = nodeClicked.Chip;
+            if (selectedChip == null)
             {
                 Debug.Log("Не выбран герой");
                 return;
@@ -132,7 +127,7 @@ public class CharacterControl : MonoBehaviour
 
     IEnumerator FollowPath()
     {
-        if (Hero == null)
+        if (selectedChip == null)
         {
             Debug.Log("Не выбран герой");
             yield break;
@@ -143,54 +138,17 @@ public class CharacterControl : MonoBehaviour
             Debug.Log("Нет пути");
             yield break;
         }
-        Vector3 currentWaypoint;
-        try
-        {
-            targetIndex = path.Count - 1;
-            currentWaypoint = path[targetIndex].GetPosition();
-            movining = true;
-            Animator.SetBool("Moving", movining);
-            RoteateHero(currentWaypoint);
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e.Message);
-            yield break;
-        }
 
-        while (true)
-        {
-            if (Hero.position == currentWaypoint)
-            {
-                targetIndex--;
-                if (targetIndex < 0)
-                {
-                    var node = gridManager.GetNode(path[0].xPos, path[0].yPos);
-                    selectedCharacter.SetNode(node);
-                    node.Character = selectedCharacter;
-                    pathfinding.Clear();
-                    movining = false;
-                    path = null;
-                    highLghitCells.ResetAllHighLightCell();
-                    selectedCharacter = null;
-                    Animator.SetBool("Moving", movining);
-                    yield break; // Завершаем корутину, если достигли конца пути
-                }
-                currentWaypoint = path[targetIndex].GetPosition();
-                RoteateHero(currentWaypoint);
-            }
+        yield return selectedChip.Move(path);
 
-            Hero.position = Vector3.MoveTowards(Hero.position, currentWaypoint, moveSpeed * Time.deltaTime);
-            yield return null; // Ждем один кадр
-        }
-    }
-
-    private void RoteateHero(Vector3 currentWaypoint)
-    {
-        // Поворот в сторону следующей точки пути
-        Vector2 direction = (currentWaypoint - Hero.position).normalized;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Hero.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        var node = gridManager.GetNode(path[0].xPos, path[0].yPos);
+        selectedChip.Stop(node);
+        node.Chip = selectedChip;
+        pathfinding.Clear();
+        movining = false;
+        path = null;
+        highLghitCells.ResetAllHighLightCell();
+        selectedChip = null;
     }
 
     void OnDestroy()
@@ -198,6 +156,6 @@ public class CharacterControl : MonoBehaviour
         // Отписка от события при уничтожении объекта
         Node.OnNodeLeftClicked -= ClickOnCellMouseLeft;
         Node.OnNodeRightClicked -= ClickOnCellMouseRight;
-        Character.OnLeftClicked -= ClickOnCharacterMouseLeft;
+        ChipBase.OnLeftClicked -= ClickOnCharacterMouseLeft;
     }
 }

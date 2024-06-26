@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1329431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1597536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1739031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &3103540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &4074909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &4778546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &4779294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &12776468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &13638720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &14568600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1518,7 +1518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &33517090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &34127234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &42507944
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &46439656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2166,7 +2166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &58146817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2278,7 +2278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &58652465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &71540147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &75936588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2696,7 +2696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &86627680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &87221881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3084,7 +3084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &98417940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3196,7 +3196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &105255691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3308,7 +3308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &109277339
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3584,7 +3584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &112768399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3696,7 +3696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &114082691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3890,7 +3890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &117347649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4002,7 +4002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &128978108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4278,7 +4278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &167216234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4390,7 +4390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &168654892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4502,7 +4502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &173880990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4614,7 +4614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &175702273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4726,7 +4726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &175966860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4838,7 +4838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &176604934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4950,7 +4950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &186424875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5062,7 +5062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &187132484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5174,7 +5174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &187429317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5286,7 +5286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &190402139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5398,7 +5398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &204029266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5510,7 +5510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &204344126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5704,7 +5704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &208259931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5816,7 +5816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &208888562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5928,7 +5928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &210008653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6040,7 +6040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &211436938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6152,7 +6152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &214853715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6264,7 +6264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &220272569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6376,7 +6376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &221649027
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6488,7 +6488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &224295188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6682,7 +6682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &229249086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6794,7 +6794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &234574149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6988,7 +6988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &249596816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7100,7 +7100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &251311409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7212,7 +7212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &252034359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7324,7 +7324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &256719285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7436,7 +7436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &257085322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7548,7 +7548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &262699009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7660,7 +7660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &264283802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7772,7 +7772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &266828957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7884,7 +7884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &271004596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8078,7 +8078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &272302041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8190,7 +8190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &274771223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8302,7 +8302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &277428994
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8414,7 +8414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &287190937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8526,7 +8526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &288936621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8720,7 +8720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &306136016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8832,7 +8832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &317475879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8944,7 +8944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &320964247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9056,7 +9056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &321500166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9168,7 +9168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &325340408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9280,7 +9280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &325543353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9902,7 +9902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &332660242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10014,7 +10014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &337649277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10126,7 +10126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &341366900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10320,7 +10320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &345273658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10432,7 +10432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &353203355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10544,7 +10544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &354058506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10656,7 +10656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &354834313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10768,7 +10768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &355174799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11014,7 +11014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &355637794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11126,7 +11126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0100000001010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &357378146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11320,7 +11320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &360750391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11432,7 +11432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &362399844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11544,7 +11544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &362416412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11656,7 +11656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &371826676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11768,7 +11768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &372002189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11880,7 +11880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &377433172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12074,7 +12074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &383258165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12186,7 +12186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &384519776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12298,7 +12298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &393252546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12410,7 +12410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &396137854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12522,7 +12522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &401288224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12634,7 +12634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &402528398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12828,7 +12828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &405413306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13022,7 +13022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &411547374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13134,7 +13134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &422612349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13246,7 +13246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &423839876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13358,7 +13358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &430015483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13470,7 +13470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &430599363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13582,7 +13582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &431809146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13694,7 +13694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &433888427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13806,7 +13806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &442145890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14000,7 +14000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &454409344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14112,7 +14112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &456582757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14224,7 +14224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &458295866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14336,7 +14336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &460658624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14448,7 +14448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &461157415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14560,7 +14560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &463062343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14672,7 +14672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &464091627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14784,7 +14784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &469599408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14896,7 +14896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &470308573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15008,7 +15008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &477927416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15120,7 +15120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &481869067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15232,7 +15232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &486169751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15344,7 +15344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &486512616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15456,7 +15456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &489596573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15568,7 +15568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &489991025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15844,7 +15844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &504163446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15956,7 +15956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &507919935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16068,7 +16068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &518168040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16191,15 +16191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893781efada96f740a6ea58649d62ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTileMap: {fileID: 0}
   gridManager: {fileID: 1758057703}
   highLghitCells: {fileID: 926281474}
-  Hero: {fileID: 1817707764}
-  Animator: {fileID: 1817707766}
-  selectedCharacter: {fileID: 1817707762}
+  selectedChip: {fileID: 1817707762}
   StartNode: {fileID: 1558508627}
-  pathfinding: {fileID: 1758057705}
-  moveSpeed: 20
 --- !u!1001 &520442570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16285,7 +16280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &520442574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16479,7 +16474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &539386111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16591,7 +16586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &539705368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16703,7 +16698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &539813168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16815,7 +16810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &540095976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16880,7 +16875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -527.5, y: -325}
+  m_AnchoredPosition: {x: -398, y: -325}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540351263
@@ -17148,7 +17143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &543103007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17260,7 +17255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &546330864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17372,7 +17367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &553182393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17513,7 +17508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143285ed5860c504c93772261ca4452f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentCharacter: {fileID: 0}
+  _currentChip: {fileID: 0}
   _textMesh: {fileID: 1242759509}
 --- !u!1001 &561333127
 PrefabInstance:
@@ -17600,7 +17595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &561333131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17712,7 +17707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &567858429
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17824,7 +17819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &578919019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17936,7 +17931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &588236011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18294,7 +18289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &593648486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18406,7 +18401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &595200256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18518,7 +18513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &596384557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18630,7 +18625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &611846846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18742,7 +18737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &621439583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18854,7 +18849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &622300154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18966,7 +18961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &625144309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19078,7 +19073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &626275816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19190,7 +19185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &632733658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19302,7 +19297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &640093249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19414,7 +19409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &642861233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19526,7 +19521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &649749289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19638,7 +19633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &650872102
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19750,7 +19745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &656658813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19944,7 +19939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &660129060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20138,7 +20133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &663528217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20414,7 +20409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &675218865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20608,7 +20603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &677069163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20720,7 +20715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &681732661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20832,7 +20827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &683368342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20944,7 +20939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &683727156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21056,7 +21051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &684538851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21168,7 +21163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &699634600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21280,7 +21275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &699823965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21392,7 +21387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &701080925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21504,7 +21499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &713994054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21616,7 +21611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &715491510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21728,7 +21723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &717576524
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21922,7 +21917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &723640151
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22070,7 +22065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &727977625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22182,7 +22177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &734012659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22376,7 +22371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &757241598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22488,7 +22483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &759634148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22600,7 +22595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &760654415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22712,7 +22707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &761133257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22906,7 +22901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &765274112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23018,7 +23013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &788530738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23130,7 +23125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &790872306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23324,7 +23319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &793345069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23436,7 +23431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &797241850
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23548,7 +23543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &801414875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23660,7 +23655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &801594502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23854,7 +23849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &805605104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23966,7 +23961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &809807331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24160,7 +24155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &812337635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24272,7 +24267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &812823012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24384,7 +24379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &816070441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24496,7 +24491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &816452859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24608,7 +24603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &820005271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24720,7 +24715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &832470656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24996,7 +24991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &838540959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25108,7 +25103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &844173610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25220,7 +25215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &844610379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25496,7 +25491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &848268495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25608,7 +25603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &851297656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25720,7 +25715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &851624495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25832,7 +25827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &853907816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25944,7 +25939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &855040812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26220,7 +26215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &861212500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26332,7 +26327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &862650706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26444,7 +26439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0100010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &863207144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26556,7 +26551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &867307187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26668,7 +26663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &884394874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26780,7 +26775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &884815626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26892,7 +26887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &889882346
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27004,7 +26999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &892738016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27116,7 +27111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &898327479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27310,7 +27305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &906353993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27422,7 +27417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &907869283
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27616,7 +27611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010001010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &921713438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27850,7 +27845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &930708337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27962,7 +27957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &935879850
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28156,7 +28151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &939282467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28268,7 +28263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0100000001010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &939615687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28380,7 +28375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &942760326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28492,7 +28487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &944319000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28604,7 +28599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &949170867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28880,7 +28875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &951117472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28992,7 +28987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &956414831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29104,7 +29099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &960078322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29216,7 +29211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &963302355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29328,7 +29323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &966749387
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29440,7 +29435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &976039411
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29627,7 +29622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101000000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &980365337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29739,7 +29734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &985183655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29851,7 +29846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &987286699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29963,7 +29958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &998406223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30157,7 +30152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1001183987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30269,7 +30264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1006052448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30381,7 +30376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1007476993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30493,7 +30488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1011731730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30687,7 +30682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1014698698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30799,7 +30794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1014933890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30911,7 +30906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1016814025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31105,7 +31100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1022293982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31217,7 +31212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1026439229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31329,7 +31324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1031417526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31441,7 +31436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101000000
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1033825713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31553,7 +31548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1036343427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31665,7 +31660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1036556236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31777,7 +31772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1037184608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31889,7 +31884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1038063968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32209,7 +32204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1043437916
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32321,7 +32316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1061807972
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32433,7 +32428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1070393909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32545,7 +32540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1073206418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32657,7 +32652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1076409574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32769,7 +32764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1088683306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32881,7 +32876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1088956445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32993,7 +32988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1092739195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33105,7 +33100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1094290173
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33217,7 +33212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1096191668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33329,7 +33324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1097131971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33441,7 +33436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1097513661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33553,7 +33548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1105515387
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33665,7 +33660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000000101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1110409092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33777,7 +33772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1119838957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33889,7 +33884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1120027494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34001,7 +33996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1127097541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34113,7 +34108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1134807050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34225,7 +34220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1137053081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34337,7 +34332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1137495570
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34449,7 +34444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1142624317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34561,7 +34556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1145135653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34673,7 +34668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1149477435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34867,7 +34862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1155141199
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35054,7 +35049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1159483836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35166,7 +35161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1160401228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35278,7 +35273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1164866896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35390,7 +35385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1167329929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35584,7 +35579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1188556682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35696,7 +35691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1189961342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35808,7 +35803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1199840460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35920,7 +35915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1208089114
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36032,7 +36027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1208289912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36144,7 +36139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1208561500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36256,7 +36251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1212272604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36368,7 +36363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1221419097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36562,7 +36557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1235332072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36674,7 +36669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1235756775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36786,7 +36781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1236920226
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37032,7 +37027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1244625849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37144,7 +37139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1246420322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37256,7 +37251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1246683648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37450,7 +37445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1248998119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37644,7 +37639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1262808587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37756,7 +37751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1264218725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37868,7 +37863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000000
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1269812499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37980,7 +37975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1273248979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38092,7 +38087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1274335960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38286,7 +38281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1280033291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38398,7 +38393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1280444884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38510,7 +38505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1281258671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38622,7 +38617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1282712580
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38734,7 +38729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1292380064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38846,7 +38841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1296889440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38958,7 +38953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1299039523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39070,7 +39065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1305244782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39182,7 +39177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1308115256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39294,7 +39289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1309693475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39406,7 +39401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1317129399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39518,7 +39513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1322683963
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39630,7 +39625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1327301115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39742,7 +39737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1331133744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39854,7 +39849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1331981736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39966,7 +39961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1333146475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40078,7 +40073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1334622943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40190,7 +40185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1334905118
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40384,7 +40379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1341334075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40541,7 +40536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101000000
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1352530035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40653,7 +40648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1355322647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40847,7 +40842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1364402868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40959,7 +40954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1367470935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41071,7 +41066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1368335285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41258,7 +41253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1372378860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41370,7 +41365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1375112121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41482,7 +41477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1378056010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41594,7 +41589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0001010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1382945503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41706,7 +41701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1383198326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41818,7 +41813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1389641148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41930,7 +41925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1389716889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42042,7 +42037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1390900005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42154,7 +42149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1395075126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42266,7 +42261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1399825654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42378,7 +42373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1412468163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42490,7 +42485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1414738729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42602,7 +42597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1419169794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42714,7 +42709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1425658947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42826,7 +42821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1428131278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43020,7 +43015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1439696599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43132,7 +43127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1442259648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43244,7 +43239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1444565373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43422,7 +43417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1449663060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43534,7 +43529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1450632924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43646,7 +43641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1451279833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43758,7 +43753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1454145211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43870,7 +43865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1461444038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43982,7 +43977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1463049166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44094,7 +44089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1471898504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44206,7 +44201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1484648185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44318,7 +44313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1486864861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44430,7 +44425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1498421513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44542,7 +44537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1499207311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44654,7 +44649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1499862762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44766,7 +44761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1501637767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44878,7 +44873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1503195500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45072,7 +45067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1515743459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45266,7 +45261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1534712664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45378,7 +45373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1535715000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45490,7 +45485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1536516714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45692,7 +45687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101000001010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1543238211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45804,7 +45799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1547778621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45916,7 +45911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1549657335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46028,7 +46023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0100000001010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1552640585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46140,7 +46135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1553599022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46256,7 +46251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1558508628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46368,7 +46363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1558985747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46480,7 +46475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1560761075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46592,7 +46587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1561660924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46704,7 +46699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1571743806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46816,7 +46811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1572678195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46928,7 +46923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1578807549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47040,7 +47035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1582247530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47152,7 +47147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1584950162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47264,7 +47259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1585854837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47376,7 +47371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1588260253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47488,7 +47483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1590995924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47600,7 +47595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1597931466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47712,7 +47707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1600229594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47824,7 +47819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1600871985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47936,7 +47931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1605061342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48048,7 +48043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1609117566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48160,7 +48155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1609257794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48272,7 +48267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1617817667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48384,7 +48379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1620161341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48496,7 +48491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1629094708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48608,7 +48603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1638465825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48802,7 +48797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010000000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1653443901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48914,7 +48909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0100000101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1653453531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49026,7 +49021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010001
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1660313945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49138,7 +49133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1666413786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49250,7 +49245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1667692883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49526,7 +49521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1677528419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49720,7 +49715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1683056062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49832,7 +49827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1689643832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49944,7 +49939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1698377950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50056,7 +50051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1708990162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50168,7 +50163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1710861926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50280,7 +50275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1711894558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50392,7 +50387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1712107636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50504,7 +50499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1716163937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50616,7 +50611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1716666575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50728,7 +50723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1719118183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50884,7 +50879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1728733697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51078,7 +51073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1736383937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51190,7 +51185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1743136714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51302,7 +51297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1744384384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51414,7 +51409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1744550953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51526,7 +51521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1745950875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51638,7 +51633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1756523599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51750,7 +51745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1756626199
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51786,9 +51781,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758057702}
-  - component: {fileID: 1758057704}
+  - component: {fileID: 1758057706}
   - component: {fileID: 1758057703}
-  - component: {fileID: 1758057705}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -51822,36 +51816,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1758057701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdcf39ee4a4fc124dba282ae25910298, type: 3}
+  m_Script: {fileID: 11500000, guid: 24643374a40454a45b9e50994c03324c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grid: {fileID: 1758057706}
+--- !u!114 &1758057706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758057701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 428cf298bbe513344bb2255f63c1ebd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _map: {fileID: 331670606}
-  _grid: {fileID: 1758057704}
---- !u!114 &1758057704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758057701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc3ba9b14be91c47bd2ea752ebf3a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridManager: {fileID: 1758057703}
---- !u!114 &1758057705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758057701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac8c39f46b3b064d9113be0a128d416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1759344785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51937,7 +51918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1759344789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52049,7 +52030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1760016011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52161,7 +52142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1770659546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52273,7 +52254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101000000
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1774717349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52385,7 +52366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1775559630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52497,7 +52478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1784641065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52609,7 +52590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1784753977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52721,7 +52702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1788079766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53002,7 +52983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1798531826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53114,7 +53095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1800357370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53226,7 +53207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1802852601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53338,7 +53319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1805815437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53450,7 +53431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1809438374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53562,7 +53543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1809797495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53681,10 +53662,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1817707764}
   - component: {fileID: 1817707763}
-  - component: {fileID: 1817707762}
   - component: {fileID: 1817707765}
   - component: {fileID: 1817707766}
   - component: {fileID: 1817707767}
+  - component: {fileID: 1817707762}
+  - component: {fileID: 1817707769}
+  - component: {fileID: 1817707768}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -53701,14 +53684,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1817707761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 504ac29c258305743bec25c87e70f98a, type: 3}
+  m_Script: {fileID: 11500000, guid: d6329abdb55f44d4e9237594c9dfb33d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 0
-  _countAction: 2
-  _moveDistance: 4
-  _name: 
-  _node: {fileID: 0}
 --- !u!212 &1817707763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53831,6 +53809,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1817707768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817707761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29671bdabc62b6499c7c727614b284c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1817707769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817707761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a13ecfb645b684b9bcb7028aa7ce97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animator: {fileID: 1817707766}
 --- !u!1001 &1817766458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53916,7 +53919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1817766462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54028,7 +54031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1818888240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54140,7 +54143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1822679488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54252,7 +54255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1828258650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54364,7 +54367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1829939612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54476,7 +54479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1833350924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54588,7 +54591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1835379219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54700,7 +54703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1835695543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54812,7 +54815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1837832788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54924,7 +54927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1838179278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55036,7 +55039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1844279689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55148,7 +55151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1847515748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55260,7 +55263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1848937489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55372,7 +55375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1851124970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55484,7 +55487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1862548882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55596,7 +55599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1864627373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55708,7 +55711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1866591068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55820,7 +55823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1871993448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56014,7 +56017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1880190238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56126,7 +56129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1880247786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56395,7 +56398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1893274809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56507,7 +56510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1895396749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56619,7 +56622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1902811928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56731,7 +56734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1906653384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56925,7 +56928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1909566448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57037,7 +57040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1916604725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57149,7 +57152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1916743627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57261,7 +57264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1935164906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57373,7 +57376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1935593799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57485,7 +57488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1943197094
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57597,7 +57600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1943911364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57709,7 +57712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1944012623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58037,7 +58040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1951526857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58149,7 +58152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1952973798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58261,7 +58264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1954548626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58373,7 +58376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1954949101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58485,7 +58488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1956192700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58597,7 +58600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1956241303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58709,7 +58712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010100000101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1960358017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58821,7 +58824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1967754670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58933,7 +58936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1981529311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59045,7 +59048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1983930544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59157,7 +59160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1991525123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59269,7 +59272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0000010101010100
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &1993686156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59381,7 +59384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2003739418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59493,7 +59496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2004274372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59605,7 +59608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2004371551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59717,7 +59720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2005243302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59787,7 +59790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d9f12e2a56b96443a50c4dc0821e7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gridManager: {fileID: 1758057703}
+  _gridManager: {fileID: 0}
 --- !u!1001 &2015314878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59873,7 +59876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2015314882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59985,7 +59988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2017160496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60097,7 +60100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2018962822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60209,7 +60212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2022235643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60321,7 +60324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2023657078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60433,7 +60436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2031216071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60545,7 +60548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2034908370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60657,7 +60660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2035267502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60769,7 +60772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2037970626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60881,7 +60884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2038392701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60993,7 +60996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2044244166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61105,7 +61108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101000000
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2047482006
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61217,7 +61220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2047968799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61329,7 +61332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2050071687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61523,7 +61526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2055015589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61635,7 +61638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2056280395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61747,7 +61750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2067381305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61859,7 +61862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2068963736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61971,7 +61974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2073033714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62083,7 +62086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2077274589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62195,7 +62198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2099080165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62307,7 +62310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2104020236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62419,7 +62422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2105154058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62531,7 +62534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2115584372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62675,7 +62678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2133855662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62787,7 +62790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2144580318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62899,7 +62902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tileTypes: 01000000
   _canStep: 0101010101010101
-  Character: {fileID: 0}
+  Chip: {fileID: 0}
 --- !u!61 &2147467655
 BoxCollider2D:
   m_ObjectHideFlags: 0
