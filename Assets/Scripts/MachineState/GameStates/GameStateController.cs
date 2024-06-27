@@ -13,17 +13,6 @@ namespace Assets.Scripts.MachineState.GameStates
         private List<GameObject> _states;
         private IState currentState;
 
-        private void Awake()
-        {
-
-            SetState(_states[0].GetComponent<IState>());
-        }
-
-        private void Update()
-        {
-            currentState?.UpdateState();
-        }
-
         public void SetState(IState newState)
         {
             currentState?.ExitState();

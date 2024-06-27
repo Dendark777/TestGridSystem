@@ -14,6 +14,11 @@ public class GridManager : MonoBehaviour
 {
     [SerializeField] private GridMap _grid;
 
+    public void Init()
+    {
+        _grid.InitGrid();
+    }
+
     public Node GetNode(int x, int y)
     {
         return _grid.GetNode(x, y);

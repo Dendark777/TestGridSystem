@@ -1,6 +1,7 @@
 using Assets.Scripts;
 using Assets.Scripts.Nodes;
 using Assets.Scripts.Players;
+using Assets.Scripts.StartLevel;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,11 +10,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class CharacterControl : MonoBehaviour
+public class ChipControl : MonoBehaviour
 {
-    [SerializeField]
     GridManager gridManager;
-    [SerializeField]
     HighLightCell highLghitCells;
 
     [SerializeField]
@@ -24,8 +23,11 @@ public class CharacterControl : MonoBehaviour
     Pathfinding pathfinding;
     List<PathNode> path;
     private bool movining = false;
-    private void Awake()
+    public void Init()
     {
+        gridManager = LevelManager.Instance.GridManager;
+        highLghitCells = LevelManager.Instance.HighLightCell;
+
         highLghitCells.Init();
         selectedChip.Init(StartNode);
         pathfinding = new Pathfinding(gridManager);

@@ -8,19 +8,21 @@ using UnityEngine;
 namespace Assets.Scripts.Players
 {
     [Serializable]
-    public class Player
+    public class Player : MonoBehaviour
     {
-        public string Name { get; set; }
-        public Color Color { get; set; }
-        public CharacterControl CharacterControl { get; set; }
-        public bool IsPlaying { get; set; }
-        public List<ChipBase> Characters { get; set; }
+        [SerializeField]
+        private ChipControl _chipControl;
+        public string Name { get; private set; }
+        public Color Color { get; private set; }
+        public bool IsPlaying { get; private set; }
+        private List<ChipBase> _chips;
 
-        public Player(string name, Color color, List<ChipBase> characters)
+        public void Init(string name, Color color, List<ChipBase> chips)
         {
             Name = name;
             Color = color;
-            Characters = characters;
+            _chips = chips;
+            _chipControl.Init();
         }
     }
 }

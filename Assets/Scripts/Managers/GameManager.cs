@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.MachineState;
 using Assets.Scripts.Players;
+using Assets.Scripts.StartLevel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,7 @@ namespace Assets.Scripts
     public class GameManager : MonoBehaviour
     {
         [SerializeField]
-        private List<Player> _players;
-        [SerializeField]
-        private Player _curentPlayer;
+        private LevelManager _levelManager;
         private IState _currentState;
         public static GameManager Instance;
 
@@ -30,9 +29,14 @@ namespace Assets.Scripts
             }
         }
 
-        public void StartGame(List<Player> players)
+        private void Start()
         {
-            _players = players;
+            StartLevel();
+        }
+
+        public void StartLevel()
+        {
+            _levelManager.StartLevel();
         }
         //    public GameObject humanPrefab; // Префаб для создания фишки человека
         //    public GameObject zombiePrefab; // Префаб для создания фишки зомби

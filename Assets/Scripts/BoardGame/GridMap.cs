@@ -16,10 +16,6 @@ public class GridMap : MonoBehaviour
     [SerializeField] private GameObject _map;
     private Node[,] _mapData;
 
-    private void Awake()
-    {
-        InitGrid();
-    }
     public void InitGrid()
     {
         var _nodes = _map.GetComponentsInChildren<Node>();
@@ -94,16 +90,6 @@ public class GridMap : MonoBehaviour
         {
             return false;
         }
-    }
-
-    internal void SetCharacter(MapElement mapElement, int xPos, int yPos)
-    {
-        var c = mapElement.GetComponent<ChipBase>();
-        if (_mapData[xPos, yPos] == null)
-        {
-            InitGrid();
-        }
-        _mapData[xPos, yPos].Chip = c;
     }
 
     public ChipBase GetChip(int x, int y)
