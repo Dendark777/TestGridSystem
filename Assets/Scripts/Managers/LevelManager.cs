@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Nodes;
 using Assets.Scripts.Players;
+using Assets.Scripts.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,10 @@ namespace Assets.Scripts.StartLevel
         [SerializeField]
         HighLightCell _highLghitCells;
         [SerializeField]
-        private PlayersManager _curentPlayer;
         private List<PlayersManager> _players;
+        [SerializeField]
+        private PlayerUI _ui;
+        private PlayersManager _currentPlayer;
         public static LevelManager Instance;
         public GridManager GridManager => _gridManager;
         public HighLightCell HighLightCell => _highLghitCells;
@@ -35,10 +38,15 @@ namespace Assets.Scripts.StartLevel
             }
         }
 
+        //Порядок в уровне 2
         public void StartLevel()
         {
+
+            Debug.Log($"LevelManager Порядок в уровне {Constants.OrderFuntion()}");
             _gridManager.Init();
-            _curentPlayer.Init();
+            _currentPlayer = _players.First();
+            _currentPlayer.Init();
+            _ui.SetCurrentPlayer(_currentPlayer);
         }
     }
 }

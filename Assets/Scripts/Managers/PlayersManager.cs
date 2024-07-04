@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Assets.Scripts.StartLevel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -16,18 +18,30 @@ namespace Assets.Scripts.Players
         private List<ChipBase> _testchips;
 
         private List<Player> _players;
+        //Порядок в уровне 4
         public void Init()
         {
+            Debug.Log($"PlayersManager Порядок в уровне {Constants.OrderFuntion()}");
+            InitChip(); 
             _currentPlayer.Init("Jon Doe", Color.black, _testchips);
         }
-        // Метод для получения случайной позиции на карте
-        private Vector3 GetRandomPosition()
+        public void InitChip()
         {
-            float x = Random.Range(-5f, 5f);
-            float z = Random.Range(-5f, 5f);
-            return new Vector3(x, 0f, z);
+            var gm = LevelManager.Instance.GridManager;
+            int x = 1;
+            int y = 1;
+            foreach (var chip in _testchips)
+            {
+                chip.Init(gm.GetNode(x, y));
+                x++;
+                y++;
+            }
         }
 
+        public Player GetPlayer()
+        {
+            return _currentPlayer;
+        }
         // Добавим метод для управления ходом игры
         public void PlayTurn()
         {

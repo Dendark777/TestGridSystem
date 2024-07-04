@@ -6,22 +6,35 @@ using System.Text;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.UI
 {
     public class PlayerUI : MonoBehaviour
     {
         [SerializeField]
-        private Player _cuurentPlayer;
-        [SerializeField]
-        private ChipBase _currentChip;
-        [SerializeField]
         private TextMeshProUGUI _textMesh;
+        [SerializeField]
+        private Image _slot1;
 
-        public void SetCurrentPlayer(Player player)
+        private PlayersManager _playersManager;
+        private Player _currentPlayer;
+        private ChipBase _currentChip;
+
+        public void SetCurrentPlayer(PlayersManager pm)
         {
-            _cuurentPlayer = player;
-            _textMesh.text = _cuurentPlayer.Name;
+            Debug.Log($"PlayerUI Порядок в уровне {Constants.OrderFuntion()}");
+            _playersManager = pm;
+            _currentPlayer = pm.GetPlayer();
+            _textMesh.text = _currentPlayer.Name;
+            EventBus.Instance.Subscribe<ChipBase>(SetCurrentChip);
+
+        }
+
+        public void SetCurrentChip(object eventData)
+        {
+            var chip = eventData as ChipBase;
+            _slot1.sprite = chip.Inventory.Items[0].Sprite;
         }
     }
 }

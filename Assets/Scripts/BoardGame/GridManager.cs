@@ -14,20 +14,30 @@ public class GridManager : MonoBehaviour
 {
     [SerializeField] private GridMap _grid;
 
+    //Порядок в уровне 3
     public void Init()
     {
+        Debug.Log($"GridManager Порядок в уровне {Constants.OrderFuntion()}");
         _grid.InitGrid();
+    }
+
+    public Node GetRandomNode()
+    {
+        var r = new System.Random();
+        int x, y;
+
+        do
+        {
+            x = r.Next(Constants.MapSizeX);
+            y = r.Next(Constants.MapSizeY);
+        }
+        while (!CheckWalkable(x, y));
+        return GetNode(x, y);
     }
 
     public Node GetNode(int x, int y)
     {
         return _grid.GetNode(x, y);
-    }
-    
-    public Node GetRandomNode()
-    {
-        var r = new  Unity.Mathematics.Random();
-        return GetNode(r.NextInt(Constants.MapSizeX), r.NextInt(Constants.MapSizeY));
     }
 
     public ChipBase GetChip(int x, int y)

@@ -6,10 +6,5 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.Items
 {
-    public enum SizeItem
-    {
-        None,
-        Small,
-        Large,
-    }
+
 }

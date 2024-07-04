@@ -15,14 +15,14 @@ namespace Assets.Scripts.Players
         public string Name { get; private set; }
         public Color Color { get; private set; }
         public bool IsPlaying { get; private set; }
-        private List<ChipBase> _chips;
 
+        //Порядок в уровне 5
         public void Init(string name, Color color, List<ChipBase> chips)
         {
+            Debug.Log($"Player Порядок в уровне {Constants.OrderFuntion()}");
             Name = name;
             Color = color;
-            _chips = chips;
-            _chipControl.Init();
+            _chipControl.Init(chips);
         }
     }
 }

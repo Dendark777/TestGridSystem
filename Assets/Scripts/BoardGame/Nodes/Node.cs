@@ -48,6 +48,11 @@ namespace Assets.Scripts.Nodes
             PosY = y;
         }
 
+        public bool Walkable()
+        {
+            return Chip == null;
+        }
+
         public List<Point> GetPointsNeighbour()
         {
             var points = new List<Point>();

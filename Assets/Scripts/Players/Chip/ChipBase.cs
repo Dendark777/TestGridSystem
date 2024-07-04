@@ -29,7 +29,7 @@ namespace Assets.Scripts.Players
         private int _countCurrentAction;
         private int _countCellPerAction;
         private ChipAnimation _animation;
-
+        public Inventory Inventory { get; private set; }
         public int MaxHealth { get; private set; } // Максимальное количество жизней
         public int CurrentHealth { get; private set; } // Текущее количество жизней
         public int MaxCellMove => _countCellPerAction * _countCurrentAction;
@@ -40,6 +40,7 @@ namespace Assets.Scripts.Players
         {
             Init("Joe Doy");
             SetNode(node);
+            Inventory = new Inventory();
         }
 
         protected virtual void Init(string name, int maxHealth = 4, int countMaxActions = 2,int countCellPerAction = 2)
@@ -116,10 +117,14 @@ namespace Assets.Scripts.Players
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-        // Метод для атаки зомби
-        public void AttackZombie()
+        public void Attack()
         {
-            // Реализация атаки зомби
+            _animation.Attack();
+        }
+
+        public void Shoot()
+        {
+            print("Выстрел");
         }
 
         // Метод для поиска

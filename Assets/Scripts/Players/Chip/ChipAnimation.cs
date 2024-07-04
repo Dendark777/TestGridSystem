@@ -25,6 +25,9 @@ namespace Assets.Scripts.Players.Chip
         {
             Animator.SetBool("Moving", true);
         }
-
+        public void Attack()
+        {
+            Animator.SetTrigger("Attack");
+        }
     }
 }

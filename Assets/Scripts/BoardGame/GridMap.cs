@@ -18,10 +18,10 @@ public class GridMap : MonoBehaviour
 
     public void InitGrid()
     {
+        Debug.Log($"GridMap Порядок в уровне {Constants.OrderFuntion()}");
         var _nodes = _map.GetComponentsInChildren<Node>();
         int sizeX = Constants.MapSizeX;
         int sizeY = Constants.MapSizeY;
-        Debug.Log($"{sizeX} {sizeY}");
         _mapData = new Node[sizeX, sizeY];
 
         for (int x = 0; x < sizeX; x++)
@@ -84,7 +84,8 @@ public class GridMap : MonoBehaviour
     {
         try
         {
-            return _mapData[xPos, yPos].TileTypes[0] != TileType.None;
+            var node = _mapData[xPos, yPos];
+            return node.Walkable() && node.TileTypes[0] != TileType.None;
         }
         catch 
         {
