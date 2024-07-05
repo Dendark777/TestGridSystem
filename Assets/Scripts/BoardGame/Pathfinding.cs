@@ -49,7 +49,7 @@ public class Pathfinding
         }
     }
 
-    public void CalculateWalkableTerrain(Node startNode, int range, ref List<PathNode> toHighlight)
+    public List<PathNode> CalculateWalkableTerrain(Node startNode, int range)
     {
         range *= 10;
 
@@ -90,7 +90,8 @@ public class Pathfinding
                 }
             }
         }
-        toHighlight?.AddRange(closedList);
+        //toHighlight?.AddRange(closedList);
+        return closedList;
     }
 
     private List<PathNode> GetNeighbourNodes(PathNode currentNode)

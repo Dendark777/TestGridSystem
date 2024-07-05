@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEditor.Experimental.GraphView;
 using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -33,24 +34,30 @@ namespace Assets.Scripts.Nodes
         public bool[] CanStep => _canStep;
         public int PosX { get; set; }
         public int PosY { get; set; }
-        public TileType[] TileTypes 
+        public TileType[] TileTypes
         {
             get => _tileTypes;
             set => _tileTypes = value;
         }
-        public ChipBase Chip;
+        private ChipBase _chip;
+        public ChipBase Chip => _chip;
         public delegate void ClickAction(GameObject clickedObject);
         public static event ClickAction OnNodeLeftClicked;
-        public static event ClickAction OnNodeRightClicked;
         public void Init(int x, int y)
         {
             PosX = x;
             PosY = y;
         }
 
+        public void SetChip(ChipBase chip)
+        {
+            _chip = chip;
+        }
+
         public bool Walkable()
         {
-            return Chip == null;
+            var t = Chip == null && TileTypes[0] != TileType.None;
+            return t;
         }
 
         public List<Point> GetPointsNeighbour()
@@ -67,18 +74,9 @@ namespace Assets.Scripts.Nodes
             return points;
         }
 
-        void OnMouseOver()
+        private void OnMouseDown()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                OnNodeLeftClicked?.Invoke(gameObject);
-
-            }
-            else if (Input.GetMouseButtonDown(1))
-            {
-                OnNodeRightClicked?.Invoke(gameObject);
-
-            }
+            OnNodeLeftClicked?.Invoke(gameObject);
         }
     }
 }

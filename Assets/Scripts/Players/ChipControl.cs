@@ -21,7 +21,7 @@ public class ChipControl : MonoBehaviour
     Node StartNode; //Пока для быстрого спауна
 
     Pathfinding pathfinding;
-    List<PathNode> path;
+    List<PathNode> _path;
     private bool movining = false;
     public void Init(List<ChipBase> chips)
     {
@@ -32,66 +32,37 @@ public class ChipControl : MonoBehaviour
         _highLghitCells.Init();
         pathfinding = new Pathfinding(_gridManager);
         Node.OnNodeLeftClicked += ClickOnCellMouseLeft;
-        Node.OnNodeRightClicked += ClickOnCellMouseRight;
-        ChipBase.OnLeftClicked += ClickOnCharacterMouseLeft;
+        EventBus.Instance.Subscribe<ChipBase>(ClickOnChipMouseLeft);
     }
 
-    private void ClickOnCharacterMouseLeft(GameObject clickedObject)
+    private void ClickOnChipMouseLeft(object clickedObject)
     {
         if (movining)
         {
             return;
         }
-        if (!clickedObject.TryGetComponent<ChipBase>(out selectedChip))
-        {
-            return;
-        }
-        EventBus.Instance.Publish<ChipBase>(selectedChip);
+        selectedChip = clickedObject as ChipBase;
+
         var nodeClicked = selectedChip.Node;
-        path = null;
+        _path = null;
 
         if (!_gridManager.CheckPosition(nodeClicked.PosX, nodeClicked.PosY))
         {
             return;
         }
 
-        List<PathNode> toHighlight = new List<PathNode>();
+        PathBuilding();
+    }
+
+    private void PathBuilding()
+    {
         pathfinding.Clear();
-        pathfinding.CalculateWalkableTerrain(selectedChip.Node,
-                                             selectedChip.MaxCellMove,
-                                             ref toHighlight);
+        List<PathNode> toHighlight = pathfinding.CalculateWalkableTerrain(selectedChip.Node,
+                                             selectedChip.MaxCellMove);
         for (int i = 0; i < toHighlight.Count; i++)
         {
             var pos = toHighlight[i].GetPosition();
             _highLghitCells.SetHighLightCell(pos);
-        }
-    }
-
-    private void ClickOnCellMouseRight(GameObject clickedObject)
-    {
-        if (movining)
-        {
-            return;
-        }
-        var nodeClicked = clickedObject.GetComponent<Node>();
-        path = null;
-
-        if (!_gridManager.CheckPosition(nodeClicked.PosX, nodeClicked.PosY))
-        {
-            return;
-        }
-        if (selectedChip != null)
-        {
-            List<PathNode> toHighlight = new List<PathNode>();
-            pathfinding.Clear();
-            pathfinding.CalculateWalkableTerrain(selectedChip.Node,
-                                                 selectedChip.MaxCellMove,
-                                                 ref toHighlight);
-            for (int i = 0; i < toHighlight.Count; i++)
-            {
-                var pos = toHighlight[i].GetPosition();
-                _highLghitCells.SetHighLightCell(pos);
-            }
         }
     }
 
@@ -112,18 +83,18 @@ public class ChipControl : MonoBehaviour
             }
             EventBus.Instance.Publish<ChipBase>(selectedChip);
         }
-        if (path != null)
+        if (_path != null)
         {
             StartCoroutine(FollowPath());
             return;
         }
         _highLghitCells.ResetAllHighLightCell();
-        path = pathfinding.TrackBackPath(nodeClicked.PosX, nodeClicked.PosY);
-        if (path != null)
+        _path = pathfinding.TrackBackPath(nodeClicked.PosX, nodeClicked.PosY);
+        if (_path != null)
         {
-            for (int i = 0; i < path.Count; i++)
+            for (int i = 0; i < _path.Count; i++)
             {
-                var pos = path[i].GetPosition();
+                var pos = _path[i].GetPosition();
                 _highLghitCells.SetHighLightCell(pos);
             }
         }
@@ -136,21 +107,20 @@ public class ChipControl : MonoBehaviour
             Debug.Log("Не выбран герой");
             yield break;
         }
-        if (!path.Any())
+        if (!_path.Any())
         {
 
             Debug.Log("Нет пути");
             yield break;
         }
 
-        yield return selectedChip.Move(path);
+        yield return selectedChip.Move(_path);
 
-        var node = _gridManager.GetNode(path[0].xPos, path[0].yPos);
+        var node = _gridManager.GetNode(_path[0].xPos, _path[0].yPos);
         selectedChip.Stop(node);
-        node.Chip = selectedChip;
         pathfinding.Clear();
         movining = false;
-        path = null;
+        _path = null;
         _highLghitCells.ResetAllHighLightCell();
         selectedChip = null;
     }
@@ -159,7 +129,6 @@ public class ChipControl : MonoBehaviour
     {
         // Отписка от события при уничтожении объекта
         Node.OnNodeLeftClicked -= ClickOnCellMouseLeft;
-        Node.OnNodeRightClicked -= ClickOnCellMouseRight;
-        ChipBase.OnLeftClicked -= ClickOnCharacterMouseLeft;
+        ChipBase.OnLeftClicked -= ClickOnChipMouseLeft;
     }
 }

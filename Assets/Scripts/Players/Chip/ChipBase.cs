@@ -61,13 +61,19 @@ namespace Assets.Scripts.Players
 
         public void SetNode(Node node)
         {
+            if (_node != null)
+            {
+                _node.SetChip(null);
+            }
             _node = node;
+            node.SetChip(this);
             transform.position = node.transform.position;
         }
 
         public void Stop(Node node)
         {
             _animation.Stay();
+            transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
             SetNode(node);
         }
 
@@ -84,7 +90,7 @@ namespace Assets.Scripts.Players
             try
             {
                 currentWaypoint = path[targetIndex].GetPosition();
-                Roteate(currentWaypoint);
+                Rotate(currentWaypoint);
             }
             catch (Exception e)
             {
@@ -102,7 +108,7 @@ namespace Assets.Scripts.Players
                         yield break; // Завершаем корутину, если достигли конца пути
                     }
                     currentWaypoint = path[targetIndex].GetPosition();
-                    Roteate(currentWaypoint);
+                    Rotate(currentWaypoint);
                 }
                 Step(currentWaypoint);
                 yield return null; // Ждем один кадр
@@ -110,12 +116,13 @@ namespace Assets.Scripts.Players
         }
 
 
-        public void Roteate(Vector3 newPosition)
+        public void Rotate(Vector3 newPosition)
         {
             Vector2 direction = (newPosition - transform.position).normalized;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
+
 
         public void Attack()
         {
@@ -152,9 +159,10 @@ namespace Assets.Scripts.Players
         }
 
 
+
         void OnMouseDown()
         {
-            OnLeftClicked.Invoke(gameObject);
+            EventBus.Instance.Publish<ChipBase>(this);
         }
     }
 }

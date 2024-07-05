@@ -85,7 +85,7 @@ public class GridMap : MonoBehaviour
         try
         {
             var node = _mapData[xPos, yPos];
-            return node.Walkable() && node.TileTypes[0] != TileType.None;
+            return node.Walkable();
         }
         catch 
         {
