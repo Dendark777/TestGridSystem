@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Players.Chip.ChipEvents;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,34 +11,20 @@ namespace Assets.Scripts.Players.Chip
 {
     public class ChipEvent : MonoBehaviour
     {
-        //private void ClickOnCharacterMouseLeft(GameObject clickedObject)
-        //{
-        //    if (movining)
-        //    {
-        //        return;
-        //    }
-        //    if (!clickedObject.TryGetComponent<ChipBase>(out selectedChip))
-        //    {
-        //        return;
-        //    }
-        //    var nodeClicked = selectedChip.Node;
-        //    path = null;
+        private ChipBase _chip;
 
-        //    if (!gridManager.CheckPosition(nodeClicked.PosX, nodeClicked.PosY))
-        //    {
-        //        return;
-        //    }
+        private void Start()
+        {
+            _chip = GetComponent<ChipBase>();
+        }
 
-        //    List<PathNode> toHighlight = new List<PathNode>();
-        //    pathfinding.Clear();
-        //    pathfinding.CalculateWalkableTerrain(selectedChip.Node,
-        //                                         selectedChip.MaxCellMove,
-        //                                         ref toHighlight);
-        //    for (int i = 0; i < toHighlight.Count; i++)
-        //    {
-        //        var pos = toHighlight[i].GetPosition();
-        //        highLghitCells.SetHighLightCell(pos);
-        //    }
-        //}
+        void OnMouseDown()
+        {
+            EventBus.Instance.Publish<ChipSelectedEvent>(_chip);
+        }
+        public void Deselected()
+        {
+            EventBus.Instance.Publish<ChipDeselectedEvent>(_chip);
+        }
     }
 }

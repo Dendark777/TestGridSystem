@@ -17,7 +17,6 @@ public class GridManager : MonoBehaviour
     //Порядок в уровне 3
     public void Init()
     {
-        Debug.Log($"GridManager Порядок в уровне {Constants.OrderFuntion()}");
         _grid.InitGrid();
     }
 

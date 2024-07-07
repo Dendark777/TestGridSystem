@@ -19,7 +19,6 @@ namespace Assets.Scripts.Players
         //Порядок в уровне 5
         public void Init(string name, Color color, List<ChipBase> chips)
         {
-            Debug.Log($"Player Порядок в уровне {Constants.OrderFuntion()}");
             Name = name;
             Color = color;
             _chipControl.Init(chips);

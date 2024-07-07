@@ -30,8 +30,8 @@ namespace Assets.Scripts.Nodes
         [SerializeField]
         private TileType[] _tileTypes;
         [SerializeField]
-        private bool[] _canStep;
-        public bool[] CanStep => _canStep;
+        private bool[] _neighbours;
+        public bool[] Neighbours => _neighbours;
         public int PosX { get; set; }
         public int PosY { get; set; }
         public TileType[] TileTypes
@@ -41,8 +41,6 @@ namespace Assets.Scripts.Nodes
         }
         private ChipBase _chip;
         public ChipBase Chip => _chip;
-        public delegate void ClickAction(GameObject clickedObject);
-        public static event ClickAction OnNodeLeftClicked;
         public void Init(int x, int y)
         {
             PosX = x;
@@ -56,27 +54,36 @@ namespace Assets.Scripts.Nodes
 
         public bool Walkable()
         {
-            var t = Chip == null && TileTypes[0] != TileType.None;
-            return t;
+            return Chip == null && TileTypes[0] != TileType.None;
         }
 
         public List<Point> GetPointsNeighbour()
         {
             var points = new List<Point>();
-            for (int i = 0; i < _canStep.Length; i++)
+            for (int i = 0; i < _neighbours.Length; i++)
             {
-                if (!_canStep[i])
+                var point = Nodes.Neighbours.Points[i];
+                if (!_neighbours[i] || PointOutGrid(point))
                 {
                     continue;
                 }
-                points.Add(Neighbours.Points[i]);
+                points.Add(point);
             }
             return points;
         }
 
+        public bool PointOutGrid(Point point)
+        {
+            return PosX + point.X < 0 ||
+                   PosY + point.Y < 0 ||
+                   PosX + point.X >= Constants.MapSizeX ||
+                   PosY + point.Y >= Constants.MapSizeY;
+        }
+
         private void OnMouseDown()
         {
-            OnNodeLeftClicked?.Invoke(gameObject);
+            EventBus.Instance.Publish<Node>(this);
+
         }
     }
 }

@@ -16,8 +16,13 @@ namespace Assets.Scripts.Players.Chip
 
         internal Inventory()
         {
+            _items.Add(new Carabin());
             _items.Add(new Pistol());
         }
 
+        public List<string> GetNamesItem()
+        {
+            return _items.Select(i=>i.ItemName).ToList();
+        }
     }
 }

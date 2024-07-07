@@ -42,9 +42,8 @@ namespace Assets.Scripts.StartLevel
         public void StartLevel()
         {
 
-            Debug.Log($"LevelManager Порядок в уровне {Constants.OrderFuntion()}");
             _gridManager.Init();
-            _currentPlayer = _players.First();
+            _currentPlayer = _players[0];
             _currentPlayer.Init();
             _ui.SetCurrentPlayer(_currentPlayer);
         }

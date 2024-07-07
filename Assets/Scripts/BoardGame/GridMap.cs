@@ -18,7 +18,6 @@ public class GridMap : MonoBehaviour
 
     public void InitGrid()
     {
-        Debug.Log($"GridMap Порядок в уровне {Constants.OrderFuntion()}");
         var _nodes = _map.GetComponentsInChildren<Node>();
         int sizeX = Constants.MapSizeX;
         int sizeY = Constants.MapSizeY;

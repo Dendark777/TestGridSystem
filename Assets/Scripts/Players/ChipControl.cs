@@ -1,6 +1,7 @@
 using Assets.Scripts;
 using Assets.Scripts.Nodes;
 using Assets.Scripts.Players;
+using Assets.Scripts.Players.Chip.ChipEvents;
 using Assets.Scripts.StartLevel;
 using System;
 using System.Collections;
@@ -31,8 +32,8 @@ public class ChipControl : MonoBehaviour
 
         _highLghitCells.Init();
         pathfinding = new Pathfinding(_gridManager);
-        Node.OnNodeLeftClicked += ClickOnCellMouseLeft;
-        EventBus.Instance.Subscribe<ChipBase>(ClickOnChipMouseLeft);
+        EventBus.Instance.Subscribe<Node>(ClickOnCellMouseLeft);
+        EventBus.Instance.Subscribe<ChipSelectedEvent>(ClickOnChipMouseLeft);
     }
 
     private void ClickOnChipMouseLeft(object clickedObject)
@@ -66,13 +67,13 @@ public class ChipControl : MonoBehaviour
         }
     }
 
-    private void ClickOnCellMouseLeft(GameObject clickedObject)
+    private void ClickOnCellMouseLeft(object clickedObject)
     {
         if (movining)
         {
             return;
         }
-        var nodeClicked = clickedObject.GetComponent<Node>();
+        var nodeClicked = clickedObject as Node;
         if (selectedChip == null)
         {
             selectedChip = nodeClicked.Chip;
@@ -128,7 +129,7 @@ public class ChipControl : MonoBehaviour
     void OnDestroy()
     {
         // Отписка от события при уничтожении объекта
-        Node.OnNodeLeftClicked -= ClickOnCellMouseLeft;
-        ChipBase.OnLeftClicked -= ClickOnChipMouseLeft;
+        EventBus.Instance.Unsubscribe<Node>(ClickOnCellMouseLeft);
+        EventBus.Instance.Unsubscribe<ChipSelectedEvent>(ClickOnChipMouseLeft);
     }
 }

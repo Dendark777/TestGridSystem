@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Nodes;
 using Assets.Scripts.Players.Chip;
+using Assets.Scripts.Players.Chip.ChipEvents;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using static Assets.Scripts.Nodes.Node;
 using static UnityEngine.UI.CanvasScaler;
@@ -15,11 +17,7 @@ namespace Assets.Scripts.Players
 {
     public class ChipBase : MonoBehaviour
     {
-
-        public static event ClickAction OnLeftClicked;
-
         private Node _node;
-
         private bool isConscious = true; // Сознание человека
 
         private bool isCarrying = false; // Переносит ли человек раненого
@@ -29,6 +27,7 @@ namespace Assets.Scripts.Players
         private int _countCurrentAction;
         private int _countCellPerAction;
         private ChipAnimation _animation;
+        private ChipEvent _event;
         public Inventory Inventory { get; private set; }
         public int MaxHealth { get; private set; } // Максимальное количество жизней
         public int CurrentHealth { get; private set; } // Текущее количество жизней
@@ -36,9 +35,9 @@ namespace Assets.Scripts.Players
         public string Name { get; private set; }
         public Node Node => _node;
 
-        public virtual void Init(Node node)
+        public virtual void Init(Node node, string name)
         {
-            Init("Joe Doy");
+            Init(name);
             SetNode(node);
             Inventory = new Inventory();
         }
@@ -51,6 +50,7 @@ namespace Assets.Scripts.Players
             CurrentHealth = MaxHealth;
             Name = name;
             _animation = GetComponent<ChipAnimation>();
+            _event = GetComponent<ChipEvent>();
             StartTurn();
         }
 
@@ -74,6 +74,7 @@ namespace Assets.Scripts.Players
         {
             _animation.Stay();
             transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
+            _event.Deselected();
             SetNode(node);
         }
 
@@ -85,30 +86,24 @@ namespace Assets.Scripts.Players
 
         public IEnumerator Move(List<PathNode> path)
         {
+            if (path == null || path.Count == 0)
+            {
+                yield break; // Завершаем корутину, если путь пустой
+            }
             int targetIndex = path.Count - 1;
-            Vector3 currentWaypoint;
-            try
-            {
-                currentWaypoint = path[targetIndex].GetPosition();
-                Rotate(currentWaypoint);
-            }
-            catch (Exception e)
-            {
-                Debug.Log(e.Message);
-                yield break;
-            }
+            Vector3 currentWaypoint = path[targetIndex].GetPosition();
+            Rotate(currentWaypoint);
             _animation.Move();
-            while (true)
+            while (targetIndex >= 0)
             {
                 if (transform.position == currentWaypoint)
                 {
                     targetIndex--;
-                    if (targetIndex < 0)
+                    if (targetIndex >= 0)
                     {
-                        yield break; // Завершаем корутину, если достигли конца пути
+                        currentWaypoint = path[targetIndex].GetPosition();
+                        Rotate(currentWaypoint);
                     }
-                    currentWaypoint = path[targetIndex].GetPosition();
-                    Rotate(currentWaypoint);
                 }
                 Step(currentWaypoint);
                 yield return null; // Ждем один кадр
@@ -156,13 +151,6 @@ namespace Assets.Scripts.Players
         public void UseItem()
         {
             // Реализация использования предмета
-        }
-
-
-
-        void OnMouseDown()
-        {
-            EventBus.Instance.Publish<ChipBase>(this);
         }
     }
 }

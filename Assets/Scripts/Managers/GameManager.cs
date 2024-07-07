@@ -35,7 +35,6 @@ namespace Assets.Scripts
         }
         public void StartLevel()
         {
-            Debug.Log($"GameManager Порядок в уровне {Constants.OrderFuntion()}");
             _levelManager.StartLevel();
         }
         //    public GameObject humanPrefab; // Префаб для создания фишки человека

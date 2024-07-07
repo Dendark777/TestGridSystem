@@ -21,7 +21,6 @@ namespace Assets.Scripts.Players
         //Порядок в уровне 4
         public void Init()
         {
-            Debug.Log($"PlayersManager Порядок в уровне {Constants.OrderFuntion()}");
             InitChip(); 
             _currentPlayer.Init("Jon Doe", Color.black, _testchips);
         }
@@ -32,7 +31,7 @@ namespace Assets.Scripts.Players
             int y = 1;
             foreach (var chip in _testchips)
             {
-                chip.Init(gm.GetNode(x, y));
+                chip.Init(gm.GetNode(x, y), $"Chip {x}");
                 x++;
                 y++;
             }
