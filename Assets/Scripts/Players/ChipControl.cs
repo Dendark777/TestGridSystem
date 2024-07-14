@@ -1,4 +1,5 @@
 using Assets.Scripts;
+using Assets.Scripts.EventsBus.ChipEvents;
 using Assets.Scripts.Nodes;
 using Assets.Scripts.Players;
 using Assets.Scripts.Players.Chip.ChipEvents;
@@ -11,16 +12,12 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class ChipControl : MonoBehaviour
+public class ChipControl : MonoBehaviour 
 {
     private GridManager _gridManager;
     private HighLightCell _highLghitCells;
     List<ChipBase> _chips;
-    [SerializeField]
     ChipBase selectedChip;
-    [SerializeField]
-    Node StartNode; //Пока для быстрого спауна
-
     Pathfinding pathfinding;
     List<PathNode> _path;
     private bool movining = false;
@@ -33,16 +30,22 @@ public class ChipControl : MonoBehaviour
         _highLghitCells.Init();
         pathfinding = new Pathfinding(_gridManager);
         EventBus.Instance.Subscribe<Node>(ClickOnCellMouseLeft);
-        EventBus.Instance.Subscribe<ChipSelectedEvent>(ClickOnChipMouseLeft);
+        EventBus.Instance.Subscribe<ChipClickEvent>(ClickChip);
+        EventBus.Instance.Subscribe<ChipDeselectedEvent>(DeSelectChip);
     }
 
-    private void ClickOnChipMouseLeft(object clickedObject)
+    private void ClickChip(object clickedObject)
     {
         if (movining)
         {
             return;
         }
+        if (selectedChip != null)
+        {
+            selectedChip.Deselected();
+        }
         selectedChip = clickedObject as ChipBase;
+        EventBus.Instance.Publish<ChipSelectedEvent>(selectedChip);
 
         var nodeClicked = selectedChip.Node;
         _path = null;
@@ -119,6 +122,12 @@ public class ChipControl : MonoBehaviour
 
         var node = _gridManager.GetNode(_path[0].xPos, _path[0].yPos);
         selectedChip.Stop(node);
+        EventBus.Instance.Publish<ChipDeselectedEvent>(selectedChip);
+    }
+
+    private void DeSelectChip(object eventData)
+    {
+
         pathfinding.Clear();
         movining = false;
         _path = null;
@@ -130,6 +139,7 @@ public class ChipControl : MonoBehaviour
     {
         // Отписка от события при уничтожении объекта
         EventBus.Instance.Unsubscribe<Node>(ClickOnCellMouseLeft);
-        EventBus.Instance.Unsubscribe<ChipSelectedEvent>(ClickOnChipMouseLeft);
+        EventBus.Instance.Unsubscribe<ChipSelectedEvent>(ClickChip);
+        EventBus.Instance.Unsubscribe<ChipDeselectedEvent>(ClickChip);
     }
 }

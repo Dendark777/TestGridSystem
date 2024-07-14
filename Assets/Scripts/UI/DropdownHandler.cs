@@ -34,7 +34,13 @@ namespace Assets.Scripts.UI
             {
                 return;
             }
-            UpdateDropdownOptions(chip.Inventory.GetNamesItem());
+            UpdateDropdownOptions(chip.GetNamesItem());
+            SetValue(chip.GetCurrentIndex());
+        }
+
+        public void SetValue(int index)
+        {
+            _dropdown.value = index;
         }
 
         public void ClearInvenoty(object selectedObject)
@@ -44,10 +50,7 @@ namespace Assets.Scripts.UI
 
         public void UpdateDropdownOptions(List<string> newOptions)
         {
-            // Очистить текущие опции
             _dropdown.ClearOptions();
-
-            // Добавить новые опции
             _dropdown.AddOptions(newOptions);
         }
 

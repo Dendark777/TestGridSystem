@@ -1,4 +1,6 @@
-﻿using Assets.Scripts.Players;
+﻿using Assets.Scripts.EventsBus.ChipEvents;
+using Assets.Scripts.Items.Weapons;
+using Assets.Scripts.Players;
 using Assets.Scripts.Players.Chip.ChipEvents;
 using System;
 using System.Collections.Generic;
@@ -24,7 +26,7 @@ namespace Assets.Scripts.UI
         {
             EventBus.Instance.Subscribe<ChipSelectedEvent>(SetCurrentChip);
             EventBus.Instance.Subscribe<ChipDeselectedEvent>(ClearChip);
-            EventBus.Instance.Subscribe<InventoryOnValueChange>(ShowCurrentItem);
+            EventBus.Instance.Subscribe<ChipSelectWeaponEvent>(ShowCurrentItem);
         }
 
         public void SetCurrentChip(object eventData)
@@ -35,19 +37,19 @@ namespace Assets.Scripts.UI
                 return;
             }
             _currentChipName.text = _currentItem.name;
-            ShowCurrentItem(0);
+            ShowCurrentItem(_currentChip.GetSelectedWeapon());
         }
 
         public void ShowCurrentItem(object eventData)
         {
-            var index = eventData as int?;
-            if (index == null || _currentChip == null)
+
+            Weapon weapon = eventData as Weapon;
+            if (_currentChip == null)
             {
                 return;
             }
-
-            _currentItem.sprite = _currentChip.Inventory.Items[index.Value].Sprite;
-            _currentItemName.text = _currentChip.Inventory.Items[index.Value].ItemName;
+            _currentItem.sprite = weapon.Sprite;
+            _currentItemName.text = weapon.ItemName;
         }
 
         public void ClearChip(object eventData)

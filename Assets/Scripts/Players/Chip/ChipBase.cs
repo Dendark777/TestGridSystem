@@ -1,4 +1,6 @@
-﻿using Assets.Scripts.Nodes;
+﻿using Assets.Scripts.EventsBus.ChipEvents;
+using Assets.Scripts.Items.Weapons;
+using Assets.Scripts.Nodes;
 using Assets.Scripts.Players.Chip;
 using Assets.Scripts.Players.Chip.ChipEvents;
 using System;
@@ -17,6 +19,8 @@ namespace Assets.Scripts.Players
 {
     public class ChipBase : MonoBehaviour
     {
+        [SerializeField]
+        private SpriteRenderer HighLightPlayerColor;
         private Node _node;
         private bool isConscious = true; // Сознание человека
 
@@ -35,14 +39,16 @@ namespace Assets.Scripts.Players
         public string Name { get; private set; }
         public Node Node => _node;
 
-        public virtual void Init(Node node, string name)
+        public virtual void Init(Node node, string name, Color playerColor)
         {
+            HighLightPlayerColor.color = new Color(playerColor.r, playerColor.g, playerColor.b, 0.5f);
             Init(name);
             SetNode(node);
             Inventory = new Inventory();
+            SelectWeapon(0);
         }
 
-        protected virtual void Init(string name, int maxHealth = 4, int countMaxActions = 2,int countCellPerAction = 2)
+        protected virtual void Init(string name, int maxHealth = 4, int countMaxActions = 2, int countCellPerAction = 2)
         {
             MaxHealth = maxHealth;
             _countMaxActions = countMaxActions;
@@ -74,7 +80,7 @@ namespace Assets.Scripts.Players
         {
             _animation.Stay();
             transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
-            _event.Deselected();
+            Deselected();
             SetNode(node);
         }
 
@@ -118,6 +124,25 @@ namespace Assets.Scripts.Players
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
+        public void SelectWeapon(int index)
+        {
+            Inventory.SetCurrentWeapon(index);
+        }
+
+        public Weapon GetSelectedWeapon()
+        {
+            return Inventory.GetCurrentWeapon();
+        }
+
+        public List<string> GetNamesItem()
+        {
+            return Inventory.GetNamesItem();
+        }
+
+        public int GetCurrentIndex()
+        {
+            return Inventory.GetCurrentIndex();
+        }
 
         public void Attack()
         {
@@ -151,6 +176,11 @@ namespace Assets.Scripts.Players
         public void UseItem()
         {
             // Реализация использования предмета
+        }
+
+        internal void Deselected()
+        {
+            _event.Deselected();
         }
     }
 }
