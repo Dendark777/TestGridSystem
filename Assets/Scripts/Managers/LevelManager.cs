@@ -18,10 +18,9 @@ namespace Assets.Scripts.StartLevel
         [SerializeField]
         HighLightCell _highLghitCells;
         [SerializeField]
-        private List<PlayersManager> _players;
-        [SerializeField]
         private PlayerUI _ui;
-        private PlayersManager _currentPlayer;
+        //private List<PlayersManager> _players;
+        private PlayersManager _playerManager;
         public static LevelManager Instance;
         public GridManager GridManager => _gridManager;
         public HighLightCell HighLightCell => _highLghitCells;
@@ -41,11 +40,14 @@ namespace Assets.Scripts.StartLevel
         //Порядок в уровне 2
         public void StartLevel()
         {
-
             _gridManager.Init();
-            _currentPlayer = _players[0];
-            _currentPlayer.Init();
-            _ui.SetCurrentPlayer(_currentPlayer);
+            _playerManager =new PlayersManager();
+            _ui.SetPlayersManager(_playerManager);
+        }
+
+        public Transform GetTransformMap()
+        {
+            return _gridManager.transform;
         }
     }
 }

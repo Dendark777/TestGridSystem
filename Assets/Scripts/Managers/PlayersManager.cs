@@ -10,16 +10,23 @@ using Random = UnityEngine.Random;
 
 namespace Assets.Scripts.Players
 {
-    public class PlayersManager : MonoBehaviour
+    public class PlayersManager
     {
-        [SerializeField]
         private Player _currentPlayer;
 
         private List<Player> _players;
         //Порядок в уровне 4
-        public void Init()
+        public PlayersManager()
         {
-            _currentPlayer.Init("Jon Doe", Color.red);
+            InitPlayers();
+        }
+
+        public void InitPlayers()
+        {
+            _players = new List<Player>();
+            _players.Add(new Player("Jon Doe", Color.red, 1));
+            _players.Add(new Player("Denis", Color.yellow, 3));
+            _currentPlayer = _players[0];
         }
 
         public Player GetPlayer()

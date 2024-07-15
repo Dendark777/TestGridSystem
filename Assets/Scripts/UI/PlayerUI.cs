@@ -19,7 +19,7 @@ namespace Assets.Scripts.UI
         private PlayersManager _playersManager;
         private Player _currentPlayer;
 
-        public void SetCurrentPlayer(PlayersManager pm)
+        public void SetPlayersManager(PlayersManager pm)
         {
             _playersManager = pm;
             _currentPlayer = pm.GetPlayer();

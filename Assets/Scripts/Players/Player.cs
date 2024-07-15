@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.StartLevel;
+﻿using Assets.Scripts.Helpers;
+using Assets.Scripts.StartLevel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,37 +9,35 @@ using UnityEngine;
 
 namespace Assets.Scripts.Players
 {
-    [Serializable]
-    public class Player : MonoBehaviour
+    public class Player
     {
-        [SerializeField]
-        private ChipControl _chipControl;
-        [SerializeField]
-        private List<ChipBase> _chips;
-
+        //private readonly ChipControl _chipControl;
+        //private readonly List<ChipBase> _chips;
+        private readonly string prefabPath = "Prefabs/Chips/Human";
         public string Name { get; private set; }
         public Color Color { get; private set; }
         public bool IsPlaying { get; private set; }
 
-        public void Init(string name, Color color)
+        public Player(string name, Color color, int index)
         {
             Name = name;
             Color = color;
-            InitChip();
-            _chipControl.Init(_chips);
+            var _chips = new List<ChipBase>();
+            GameObject humanPrefab = Resources.Load<GameObject>(prefabPath);
+            for (int i = 0; i < 2; i++)
+            {
+                var human = InstantiateHelper.Instance.InstantiatePrefab(humanPrefab);
+                human.transform.SetParent(LevelManager.Instance.GridManager.transform);
+                InitChip(human.GetComponent<ChipBase>(), i + index, i + index);
+                _chips.Add(human.GetComponent<ChipBase>());
+            }
+            var _chipControl = new ChipControl(_chips);
         }
 
-        public void InitChip()
+        public void InitChip(ChipBase chip, int x, int y)
         {
             var gm = LevelManager.Instance.GridManager;
-            int x = 1;
-            int y = 1;
-            foreach (var chip in _chips)
-            {
-                chip.Init(gm.GetNode(x, y), $"Chip {x}", Color);
-                x++;
-                y++;
-            }
+            chip.Init(gm.GetNode(x, y), $"Chip {x}", Color);
         }
 
     }

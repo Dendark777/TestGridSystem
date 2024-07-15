@@ -1,5 +1,6 @@
 using Assets.Scripts;
 using Assets.Scripts.EventsBus.ChipEvents;
+using Assets.Scripts.Helpers;
 using Assets.Scripts.Nodes;
 using Assets.Scripts.Players;
 using Assets.Scripts.Players.Chip.ChipEvents;
@@ -12,36 +13,37 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class ChipControl : MonoBehaviour 
+public class ChipControl
 {
-    private GridManager _gridManager;
-    private HighLightCell _highLghitCells;
-    List<ChipBase> _chips;
-    ChipBase selectedChip;
-    Pathfinding pathfinding;
-    List<PathNode> _path;
-    private bool movining = false;
-    public void Init(List<ChipBase> chips)
+    private readonly GridManager _gridManager;
+    private readonly HighLightCell _highLghitCells;
+    //private readonly List<ChipBase> _chips;
+    private ChipBase selectedChip;
+    private readonly Pathfinding pathfinding;
+    private List<PathNode> _path;
+    public ChipControl(List<ChipBase> chips)
     {
         _gridManager = LevelManager.Instance.GridManager;
         _highLghitCells = LevelManager.Instance.HighLightCell;
-        _chips = chips;
+        //_chips = chips;
 
         _highLghitCells.Init();
         pathfinding = new Pathfinding(_gridManager);
         EventBus.Instance.Subscribe<Node>(ClickOnCellMouseLeft);
         EventBus.Instance.Subscribe<ChipClickEvent>(ClickChip);
         EventBus.Instance.Subscribe<ChipDeselectedEvent>(DeSelectChip);
+        EventBus.Instance.Subscribe<ChipStopEvent>(ChipStop);
+
     }
 
     private void ClickChip(object clickedObject)
     {
-        if (movining)
-        {
-            return;
-        }
         if (selectedChip != null)
         {
+            if (selectedChip.IsMove)
+            {
+                return;
+            }
             selectedChip.Deselected();
         }
         selectedChip = clickedObject as ChipBase;
@@ -72,26 +74,21 @@ public class ChipControl : MonoBehaviour
 
     private void ClickOnCellMouseLeft(object clickedObject)
     {
-        if (movining)
+        if (selectedChip != null && selectedChip.IsMove)
         {
             return;
         }
-        var nodeClicked = clickedObject as Node;
         if (selectedChip == null)
         {
-            selectedChip = nodeClicked.Chip;
-            if (selectedChip == null)
-            {
-                Debug.Log("Не выбран герой");
-                return;
-            }
-            EventBus.Instance.Publish<ChipBase>(selectedChip);
+            Debug.Log("Не выбран герой");
+            return;
         }
         if (_path != null)
         {
-            StartCoroutine(FollowPath());
+            FollowPath();
             return;
         }
+        var nodeClicked = clickedObject as Node;
         _highLghitCells.ResetAllHighLightCell();
         _path = pathfinding.TrackBackPath(nodeClicked.PosX, nodeClicked.PosY);
         if (_path != null)
@@ -104,32 +101,35 @@ public class ChipControl : MonoBehaviour
         }
     }
 
-    IEnumerator FollowPath()
+    void FollowPath()
     {
         if (selectedChip == null)
         {
             Debug.Log("Не выбран герой");
-            yield break;
+            return;
         }
         if (!_path.Any())
         {
 
             Debug.Log("Нет пути");
-            yield break;
+            return;
         }
-
-        yield return selectedChip.Move(_path);
-
+        //if (selectedChip.IsMove)
+        //{
+        //    return;
+        //}
         var node = _gridManager.GetNode(_path[0].xPos, _path[0].yPos);
-        selectedChip.Stop(node);
+        selectedChip.StartMove(_path, node);
+    }
+
+    public void ChipStop(object dataEvent)
+    {
         EventBus.Instance.Publish<ChipDeselectedEvent>(selectedChip);
     }
 
     private void DeSelectChip(object eventData)
     {
-
         pathfinding.Clear();
-        movining = false;
         _path = null;
         _highLghitCells.ResetAllHighLightCell();
         selectedChip = null;
@@ -141,5 +141,7 @@ public class ChipControl : MonoBehaviour
         EventBus.Instance.Unsubscribe<Node>(ClickOnCellMouseLeft);
         EventBus.Instance.Unsubscribe<ChipSelectedEvent>(ClickChip);
         EventBus.Instance.Unsubscribe<ChipDeselectedEvent>(ClickChip);
+        EventBus.Instance.Unsubscribe<ChipStopEvent>(ChipStop);
+
     }
 }

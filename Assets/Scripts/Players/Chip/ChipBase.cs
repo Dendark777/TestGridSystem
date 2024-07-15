@@ -37,6 +37,8 @@ namespace Assets.Scripts.Players
         public int CurrentHealth { get; private set; } // Текущее количество жизней
         public int MaxCellMove => _countCellPerAction * _countCurrentAction;
         public string Name { get; private set; }
+        public bool IsMove { get; private set; }
+
         public Node Node => _node;
 
         public virtual void Init(Node node, string name, Color playerColor)
@@ -46,6 +48,7 @@ namespace Assets.Scripts.Players
             SetNode(node);
             Inventory = new Inventory();
             SelectWeapon(0);
+            IsMove = false;
         }
 
         protected virtual void Init(string name, int maxHealth = 4, int countMaxActions = 2, int countCellPerAction = 2)
@@ -82,6 +85,8 @@ namespace Assets.Scripts.Players
             transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
             Deselected();
             SetNode(node);
+            EventBus.Instance.Publish<ChipStopEvent>(this);
+            IsMove = false ;
         }
 
         // Метод для перемещения фишки
@@ -90,13 +95,18 @@ namespace Assets.Scripts.Players
             transform.position = Vector3.MoveTowards(transform.position, newPosition, Constants.MoveSpeed * Time.deltaTime);
         }
 
-        public IEnumerator Move(List<PathNode> path)
+        public void StartMove(List<PathNode> path, Node lastNode)
         {
             if (path == null || path.Count == 0)
             {
-                yield break; // Завершаем корутину, если путь пустой
+                return; // Завершаем корутину, если путь пустой
             }
-            int targetIndex = path.Count - 1;
+            IsMove = true;
+            StartCoroutine(Move(path, lastNode, path.Count - 1));
+        }
+
+        public IEnumerator Move(List<PathNode> path,Node lastNode, int targetIndex)
+        {
             Vector3 currentWaypoint = path[targetIndex].GetPosition();
             Rotate(currentWaypoint);
             _animation.Move();
@@ -114,6 +124,7 @@ namespace Assets.Scripts.Players
                 Step(currentWaypoint);
                 yield return null; // Ждем один кадр
             }
+            Stop(lastNode);
         }
 
 
