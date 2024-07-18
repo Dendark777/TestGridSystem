@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Helpers;
+﻿using Assets.Scripts.EventsBus.PlayersEvents;
+using Assets.Scripts.Helpers;
 using Assets.Scripts.StartLevel;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Assets.Scripts.Players
 {
     public class Player
     {
-        //private readonly ChipControl _chipControl;
+        private readonly ChipControl _chipControl;
         //private readonly List<ChipBase> _chips;
         private readonly string prefabPath = "Prefabs/Chips/Human";
         public string Name { get; private set; }
@@ -22,6 +23,7 @@ namespace Assets.Scripts.Players
         {
             Name = name;
             Color = color;
+            IsPlaying = false;
             var _chips = new List<ChipBase>();
             GameObject humanPrefab = Resources.Load<GameObject>(prefabPath);
             for (int i = 0; i < 2; i++)
@@ -31,7 +33,17 @@ namespace Assets.Scripts.Players
                 InitChip(human.GetComponent<ChipBase>(), i + index, i + index);
                 _chips.Add(human.GetComponent<ChipBase>());
             }
-            var _chipControl = new ChipControl(_chips);
+            _chipControl = new ChipControl(_chips);
+        }
+
+        public void StartTurn()
+        {
+            _chipControl.StartTurnPlayer();
+        }
+
+        public void EndTurn()
+        {
+            _chipControl.EndTurnPlayer();
         }
 
         public void InitChip(ChipBase chip, int x, int y)

@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Players;
+﻿using Assets.Scripts.EventsBus.PlayersEvents;
+using Assets.Scripts.Players;
 using Assets.Scripts.Players.Chip.ChipEvents;
 using System;
 using System.Collections.Generic;
@@ -13,17 +14,20 @@ namespace Assets.Scripts.UI
     public class PlayerUI : MonoBehaviour
     {
         [SerializeField]
-        private TextMeshProUGUI _textMesh;
+        private TextMeshProUGUI _namePlayer;
 
-
-        private PlayersManager _playersManager;
         private Player _currentPlayer;
 
-        public void SetPlayersManager(PlayersManager pm)
+        private void Awake()
         {
-            _playersManager = pm;
-            _currentPlayer = pm.GetPlayer();
-            _textMesh.text = _currentPlayer.Name;
+            EventBus.Instance.Subscribe<StartTurnPlayer>(SetPlayer);
+        }
+
+        public void SetPlayer(object eventData)
+        {
+            var player = eventData as Player;
+            _currentPlayer = player;
+            _namePlayer.text = _currentPlayer.Name;
         }
     }
 }

@@ -17,7 +17,7 @@ public class ChipControl
 {
     private readonly GridManager _gridManager;
     private readonly HighLightCell _highLghitCells;
-    //private readonly List<ChipBase> _chips;
+    private readonly List<ChipBase> _chips;
     private ChipBase selectedChip;
     private readonly Pathfinding pathfinding;
     private List<PathNode> _path;
@@ -25,15 +25,25 @@ public class ChipControl
     {
         _gridManager = LevelManager.Instance.GridManager;
         _highLghitCells = LevelManager.Instance.HighLightCell;
-        //_chips = chips;
-
+        _chips = chips;
         _highLghitCells.Init();
         pathfinding = new Pathfinding(_gridManager);
+    }
+
+    public void StartTurnPlayer()
+    {
         EventBus.Instance.Subscribe<Node>(ClickOnCellMouseLeft);
         EventBus.Instance.Subscribe<ChipClickEvent>(ClickChip);
         EventBus.Instance.Subscribe<ChipDeselectedEvent>(DeSelectChip);
         EventBus.Instance.Subscribe<ChipStopEvent>(ChipStop);
+    }
 
+    public void EndTurnPlayer()
+    {
+        EventBus.Instance.Unsubscribe<Node>(ClickOnCellMouseLeft);
+        EventBus.Instance.Unsubscribe<ChipClickEvent>(ClickChip);
+        EventBus.Instance.Unsubscribe<ChipDeselectedEvent>(DeSelectChip);
+        EventBus.Instance.Unsubscribe<ChipStopEvent>(ChipStop);
     }
 
     private void ClickChip(object clickedObject)
@@ -46,7 +56,12 @@ public class ChipControl
             }
             selectedChip.Deselected();
         }
-        selectedChip = clickedObject as ChipBase;
+        var clickedChip = clickedObject as ChipBase;
+        if (!_chips.Contains(clickedChip))
+        {
+            return;
+        }
+        selectedChip = clickedChip;
         EventBus.Instance.Publish<ChipSelectedEvent>(selectedChip);
 
         var nodeClicked = selectedChip.Node;
@@ -114,10 +129,6 @@ public class ChipControl
             Debug.Log("Нет пути");
             return;
         }
-        //if (selectedChip.IsMove)
-        //{
-        //    return;
-        //}
         var node = _gridManager.GetNode(_path[0].xPos, _path[0].yPos);
         selectedChip.StartMove(_path, node);
     }

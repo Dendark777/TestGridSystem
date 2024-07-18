@@ -42,12 +42,18 @@ namespace Assets.Scripts.StartLevel
         {
             _gridManager.Init();
             _playerManager =new PlayersManager();
-            _ui.SetPlayersManager(_playerManager);
+            _ui.SetPlayer(GetCurrntPlayer());
         }
 
         public Transform GetTransformMap()
         {
             return _gridManager.transform;
         }
+
+        public Player GetCurrntPlayer()
+        {
+            return _playerManager.GetCurrntPlayer();
+        }
+
     }
 }

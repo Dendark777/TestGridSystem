@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.StartLevel;
+﻿using Assets.Scripts.EventsBus.PlayersEvents;
+using Assets.Scripts.StartLevel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,29 +16,44 @@ namespace Assets.Scripts.Players
         private Player _currentPlayer;
 
         private List<Player> _players;
+        private int _currentPlayerIndex;
         //Порядок в уровне 4
         public PlayersManager()
         {
             InitPlayers();
+            EventBus.Instance.Subscribe<NextPlayer>(NextPlayer);
         }
 
         public void InitPlayers()
         {
-            _players = new List<Player>();
-            _players.Add(new Player("Jon Doe", Color.red, 1));
-            _players.Add(new Player("Denis", Color.yellow, 3));
-            _currentPlayer = _players[0];
+            _currentPlayerIndex = -1;
+            _players = new List<Player>
+            {
+                new Player("Jon Doe", Color.red, 1),
+                new Player("Denis", Color.yellow, 3)
+            };
+            NextPlayer();
         }
 
-        public Player GetPlayer()
+        public Player GetCurrntPlayer()
         {
             return _currentPlayer;
         }
-        // Добавим метод для управления ходом игры
-        public void PlayTurn()
+
+        public void NextPlayer(object eventData = null)
         {
-            // Реализация хода игры, включая ходы каждого игрока
-            // Например, вызов методов для выполнения действий каждого игрока
+            if (_currentPlayer != null)
+            {
+                _currentPlayer.EndTurn();
+            }
+            _currentPlayerIndex++;
+            if (_currentPlayerIndex >= _players.Count)
+            {
+                _currentPlayerIndex = 0;
+            }
+            _currentPlayer = _players[_currentPlayerIndex];
+            _currentPlayer.StartTurn();
+            EventBus.Instance.Publish<StartTurnPlayer>(_currentPlayer);
         }
     }
 }
