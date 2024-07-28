@@ -27,8 +27,8 @@ public class GridManager : MonoBehaviour
 
         do
         {
-            x = r.Next(Constants.MapSizeX);
-            y = r.Next(Constants.MapSizeY);
+            x = r.Next(LevelConstants.MapSizeX);
+            y = r.Next(LevelConstants.MapSizeY);
         }
         while (!CheckWalkable(x, y));
         return GetNode(x, y);
@@ -48,6 +48,12 @@ public class GridManager : MonoBehaviour
     {
         return _grid.CheckPosition(x, y);
     }
+
+    public bool CheckStopable(int xPos, int yPos)
+    {
+        return _grid.CheckStopable(xPos, yPos);
+    }
+
     public bool CheckWalkable(int xPos, int yPos)
     {
         return _grid.CheckWalkable(xPos, yPos);

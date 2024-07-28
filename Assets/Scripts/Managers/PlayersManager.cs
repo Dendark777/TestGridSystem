@@ -21,18 +21,29 @@ namespace Assets.Scripts.Players
         public PlayersManager()
         {
             InitPlayers();
+            InitManager();
+        }
+        public PlayersManager(List<Player> players)
+        {
+            _players = players;
+            InitManager();
+        }
+
+        private void InitManager()
+        {
             EventBus.Instance.Subscribe<NextPlayer>(NextPlayer);
+            _players.ForEach(p=>p.InitChip());
+            _currentPlayerIndex = -1;
+            NextPlayer();
         }
 
         public void InitPlayers()
         {
-            _currentPlayerIndex = -1;
             _players = new List<Player>
             {
                 new Player("Jon Doe", Color.red, 1),
                 new Player("Denis", Color.yellow, 3)
             };
-            NextPlayer();
         }
 
         public Player GetCurrntPlayer()
@@ -42,10 +53,7 @@ namespace Assets.Scripts.Players
 
         public void NextPlayer(object eventData = null)
         {
-            if (_currentPlayer != null)
-            {
-                _currentPlayer.EndTurn();
-            }
+            _currentPlayer?.EndTurn();
             _currentPlayerIndex++;
             if (_currentPlayerIndex >= _players.Count)
             {

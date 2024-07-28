@@ -1,18 +1,16 @@
+using Assets.Scripts.Nodes;
+using Assets.Scripts.Players.Chip.Humans;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Commando : MonoBehaviour
+namespace Assets.Scripts.Players.Chip.Humans
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Commando : HumanBase
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Start()
+        {
+            SpecificInitParameters("Спецназовец");
+        }
     }
 }

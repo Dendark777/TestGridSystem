@@ -1,6 +1,8 @@
-﻿using Assets.Scripts.MachineState;
+﻿using Assets.Scripts.EventsBus.UIEvents;
+using Assets.Scripts.MachineState;
 using Assets.Scripts.Players;
 using Assets.Scripts.StartLevel;
+using Assets.Scripts.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,8 @@ namespace Assets.Scripts
     {
         [SerializeField]
         private LevelManager _levelManager;
+        [SerializeField]
+        private TilePlayerSetingsManager _tilePlayerSetingsManager;
         private IState _currentState;
         public static GameManager Instance;
 
@@ -27,99 +31,20 @@ namespace Assets.Scripts
             {
                 Destroy(gameObject);
             }
+            EventBus.Instance.Subscribe<StartLevelGame>(StartLevel);
         }
 
-        private void Start()
+        public void StartLevel(object eventData)
         {
-            StartLevel();
+            var players = new List<Player>();
+            int i = 0;
+            foreach (var player in _tilePlayerSetingsManager.GetTiles())
+            {
+                var pName = string.IsNullOrEmpty(player.GetNamePlayer()) ? $"Игрок {i}" : player.GetNamePlayer();
+                players.Add(new Player(pName, player.GetColorPlayer(), i++, player.GetChips().Count));
+            }
+            _levelManager.StartLevel(players);
         }
-        public void StartLevel()
-        {
-            _levelManager.StartLevel();
-        }
-        //    public GameObject humanPrefab; // Префаб для создания фишки человека
-        //    public GameObject zombiePrefab; // Префаб для создания фишки зомби
-        //    public GameObject characterCardPrefab; // Префаб для создания карточки персонажа
-
-        //    public GameObject[] spawnPoints; // Точки спауна для размещения фишек людей
-        //    public GameObject map; // Карта для размещения фишек людей
-
-        //    private List<GameObject> humans = new List<GameObject>(); // Список фишек людей
-        //    private List<GameObject> zombies = new List<GameObject>(); // Список фишек зомби
-
-        //    void Start()
-        //    {
-        //        Определение ролей
-        //        DetermineRoles();
-
-        //        Раздача фишек
-        //        DistributeTokens();
-
-        //        Распределение персонажей
-        //        DistributeCharacters();
-
-        //        Раздача карт
-        //        DealCards();
-
-        //        Определение фишек людей на карте
-        //        PlaceHumans();
-        //    }
-
-        //    Метод для определения ролей
-        //    private void DetermineRoles()
-        //    {
-        //        Если игроков двое
-        //        if (PlayerManager.Instance.GetPlayerCount() == 2)
-        //        {
-        //            Один игрок играет за людей, а другой за зомби
-        //            PlayerManager.Instance.AssignRoles(PlayerRole.Human, PlayerRole.Zombie);
-        //        }
-        //        else
-        //        {
-        //            Один игрок играет за зомби
-        //            PlayerManager.Instance.AssignRoles(PlayerRole.Zombie);
-
-        //            Все остальные игроки играют за людей
-        //            PlayerManager.Instance.AssignRoles(PlayerRole.Human, PlayerManager.Instance.GetPlayerCount() - 1);
-        //        }
-        //    }
-
-        //    Метод для раздачи фишек
-        //    private void DistributeTokens()
-        //    {
-        //        Игроки - люди берут себе фишки людей
-        //        PlayerManager.Instance.AssignHumanTokens();
-
-        //        Игрок - зомби берет себе в четыре раза больше фишек зомби
-        //        PlayerManager.Instance.AssignZombieTokens();
-        //    }
-
-        //    Метод для распределения персонажей
-        //    private void DistributeCharacters()
-        //    {
-        //        Раздаем участвующим в игре людям карточки персонажей
-        //        PlayerManager.Instance.AssignCharacterCards();
-        //    }
-
-        //    Метод для раздачи карт
-        //    private void DealCards()
-        //    {
-        //        Игрок - зомби набирает из колоды карт зомби 3 карты за каждого участвующего в игре персонажа
-        //        PlayerManager.Instance.DealZombieCards();
-        //    }
-
-        //    Метод для определения фишек людей на карте
-        //    private void PlaceHumans()
-        //    {
-        //        foreach (GameObject human in humans)
-        //        {
-        //            Определение случайной точки спауна для фишки человека
-        //           GameObject spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-
-        //            Помещение фишки человека на карту в указанную точку спауна
-        //            human.transform.position = spawnPoint.transform.position;
-        //        }
-        //    }
     }
 
 }

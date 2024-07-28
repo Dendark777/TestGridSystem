@@ -76,8 +76,8 @@ namespace Assets.Scripts.Nodes
         {
             return PosX + point.X < 0 ||
                    PosY + point.Y < 0 ||
-                   PosX + point.X >= Constants.MapSizeX ||
-                   PosY + point.Y >= Constants.MapSizeY;
+                   PosX + point.X >= LevelConstants.MapSizeX ||
+                   PosY + point.Y >= LevelConstants.MapSizeY;
         }
 
         private void OnMouseDown()

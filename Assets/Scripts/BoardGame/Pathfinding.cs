@@ -39,10 +39,10 @@ public class Pathfinding
     public Pathfinding(GridManager gridManager)
     {
         _gridManager = gridManager;
-        _pathNodes = new PathNode[Constants.MapSizeX, Constants.MapSizeY];
-        for (int x = 0; x < Constants.MapSizeX; x++)
+        _pathNodes = new PathNode[LevelConstants.MapSizeX, LevelConstants.MapSizeY];
+        for (int x = 0; x < LevelConstants.MapSizeX; x++)
         {
-            for (int y = 0; y < Constants.MapSizeY; y++)
+            for (int y = 0; y < LevelConstants.MapSizeY; y++)
             {
                 _pathNodes[x, y] = new PathNode(x, y);
             }

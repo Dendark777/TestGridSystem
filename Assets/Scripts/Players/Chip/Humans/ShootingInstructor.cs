@@ -1,18 +1,12 @@
+using Assets.Scripts.Players.Chip.Humans;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ShootingInstructor : HumanBase
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SpecificInitParameters("Инструктор по стрельбе");
     }
 }

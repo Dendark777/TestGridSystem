@@ -1,4 +1,6 @@
-﻿using Assets.Scripts.EventsBus.ChipEvents;
+﻿using Assets.Scripts.Constants;
+using Assets.Scripts.EventsBus.ChipEvents;
+using Assets.Scripts.Helpers.Parameters;
 using Assets.Scripts.Items.Weapons;
 using Assets.Scripts.Nodes;
 using Assets.Scripts.Players.Chip;
@@ -19,48 +21,51 @@ namespace Assets.Scripts.Players
 {
     public class ChipBase : MonoBehaviour
     {
-        [SerializeField]
-        private SpriteRenderer HighLightPlayerColor;
         private Node _node;
-        private bool isConscious = true; // Сознание человека
-
-        private bool isCarrying = false; // Переносит ли человек раненого
-        private GameObject carriedHuman; // Раненый человек, который переносится
-
+        private ChipAnimation _animation;
+        private ChipEvent _event;
+        private Inventory _inventory;
         private int _countMaxActions; // Количество действий за ход
         private int _countCurrentAction;
         private int _countCellPerAction;
-        private ChipAnimation _animation;
-        private ChipEvent _event;
-        public Inventory Inventory { get; private set; }
+        public int MaxCellMove => _countCellPerAction * _countCurrentAction;
         public int MaxHealth { get; private set; } // Максимальное количество жизней
         public int CurrentHealth { get; private set; } // Текущее количество жизней
-        public int MaxCellMove => _countCellPerAction * _countCurrentAction;
+        [SerializeField]
         public string Name { get; private set; }
         public bool IsMove { get; private set; }
-
         public Node Node => _node;
 
-        public virtual void Init(Node node, string name, Color playerColor)
+        public virtual void Init(Node node, Color playerColor)
         {
-            HighLightPlayerColor.color = new Color(playerColor.r, playerColor.g, playerColor.b, 0.5f);
-            Init(name);
             SetNode(node);
-            Inventory = new Inventory();
-            SelectWeapon(0);
             IsMove = false;
+            InitComponents(playerColor);
         }
 
-        protected virtual void Init(string name, int maxHealth = 4, int countMaxActions = 2, int countCellPerAction = 2)
+        private void InitComponents(Color playerColor)
         {
-            MaxHealth = maxHealth;
-            _countMaxActions = countMaxActions;
-            _countCellPerAction = countCellPerAction;
-            CurrentHealth = MaxHealth;
+            var HighLightPlayerColor = transform.GetChild(0).GetComponent<SpriteRenderer>();
+            HighLightPlayerColor.color = new Color(playerColor.r, playerColor.g, playerColor.b, 0.5f);
+        }
+
+        protected void SpecificInitParameters(string name, Inventory inventory = null)
+        {
             Name = name;
+            _inventory = inventory ?? new Inventory();
+            SelectWeapon(0);
+        }
+
+        protected void InitBaseParameters(BaseParameters parameters)
+        {
+            MaxHealth = parameters.MaxHealth;
+            _countMaxActions = parameters.CountMaxActions;
+            _countCellPerAction = parameters.CountCellPerAction;
+            CurrentHealth = MaxHealth;
             _animation = GetComponent<ChipAnimation>();
             _event = GetComponent<ChipEvent>();
-            StartTurn();
+            _animation.SetAnimatorController(parameters.AnimatorPath);
+            _countCurrentAction = _countMaxActions;
         }
 
         public void StartTurn()
@@ -86,13 +91,13 @@ namespace Assets.Scripts.Players
             Deselected();
             SetNode(node);
             EventBus.Instance.Publish<ChipStopEvent>(this);
-            IsMove = false ;
+            IsMove = false;
         }
 
         // Метод для перемещения фишки
         public void Step(Vector3 newPosition)
         {
-            transform.position = Vector3.MoveTowards(transform.position, newPosition, Constants.MoveSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, LevelConstants.MoveSpeed * Time.deltaTime);
         }
 
         public void StartMove(List<PathNode> path, Node lastNode)
@@ -105,7 +110,7 @@ namespace Assets.Scripts.Players
             StartCoroutine(Move(path, lastNode, path.Count - 1));
         }
 
-        public IEnumerator Move(List<PathNode> path,Node lastNode, int targetIndex)
+        public IEnumerator Move(List<PathNode> path, Node lastNode, int targetIndex)
         {
             Vector3 currentWaypoint = path[targetIndex].GetPosition();
             Rotate(currentWaypoint);
@@ -137,22 +142,22 @@ namespace Assets.Scripts.Players
 
         public void SelectWeapon(int index)
         {
-            Inventory.SetCurrentWeapon(index);
+            _inventory.SetCurrentWeapon(index);
         }
 
         public Weapon GetSelectedWeapon()
         {
-            return Inventory.GetCurrentWeapon();
+            return _inventory.GetCurrentWeapon();
         }
 
         public List<string> GetNamesItem()
         {
-            return Inventory.GetNamesItem();
+            return _inventory.GetNamesItem();
         }
 
         public int GetCurrentIndex()
         {
-            return Inventory.GetCurrentIndex();
+            return _inventory.GetCurrentIndex();
         }
 
         public void Attack()

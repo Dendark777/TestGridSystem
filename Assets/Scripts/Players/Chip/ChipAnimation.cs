@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,25 +10,33 @@ namespace Assets.Scripts.Players.Chip
 {
     public class ChipAnimation : MonoBehaviour
     {
-        [SerializeField]
-        Animator Animator;
-
-        public void Start() 
+        Animator _animator;
+        public void SetAnimatorController(string animatorPath)
         {
-            Animator = GetComponent<Animator>();
+            _animator = GetComponent<Animator>();
             Stay();
+            // Загружаем аниматор контроллер из ресурсов
+            RuntimeAnimatorController controller = Resources.Load<RuntimeAnimatorController>(animatorPath);
+            if (controller == null)
+            {
+                Debug.LogError("Animator Controller not found at path: " + animatorPath);
+                return;
+            }
+            // Назначаем загруженный аниматор контроллер
+            _animator.runtimeAnimatorController = controller;
         }
+
         public void Stay()
         {
-            Animator.SetBool("Moving", false);
+            _animator.SetBool("Moving", false);
         }
         public void Move()
         {
-            Animator.SetBool("Moving", true);
+            _animator.SetBool("Moving", true);
         }
         public void Attack()
         {
-            Animator.SetTrigger("Attack");
+            _animator.SetTrigger("Attack");
         }
     }
 }

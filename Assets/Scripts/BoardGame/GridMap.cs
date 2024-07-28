@@ -19,8 +19,8 @@ public class GridMap : MonoBehaviour
     public void InitGrid()
     {
         var _nodes = _map.GetComponentsInChildren<Node>();
-        int sizeX = Constants.MapSizeX;
-        int sizeY = Constants.MapSizeY;
+        int sizeX = LevelConstants.MapSizeX;
+        int sizeY = LevelConstants.MapSizeY;
         _mapData = new Node[sizeX, sizeY];
 
         for (int x = 0; x < sizeX; x++)
@@ -68,11 +68,11 @@ public class GridMap : MonoBehaviour
 
     public bool CheckPosition(int x, int y)
     {
-        if (x < 0 || x >= Constants.MapSizeX)
+        if (x < 0 || x >= LevelConstants.MapSizeX)
         {
             return false;
         }
-        if (y < 0 || y >= Constants.MapSizeY)
+        if (y < 0 || y >= LevelConstants.MapSizeY)
         {
             return false;
         }
@@ -86,14 +86,20 @@ public class GridMap : MonoBehaviour
             var node = _mapData[xPos, yPos];
             return node.Walkable();
         }
-        catch 
+        catch
         {
             return false;
         }
     }
-
-    public ChipBase GetChip(int x, int y)
+    internal bool CheckStopable(int xPos, int yPos)
     {
-        return _mapData[x, y].Chip;
+        var result = CheckWalkable(xPos, yPos);
+        var chip = GetChip(xPos, yPos);
+        return result && chip == null;
+    }
+
+    public ChipBase GetChip(int xPos, int yPos)
+    {
+        return _mapData[xPos, yPos].Chip;
     }
 }

@@ -10,7 +10,6 @@ namespace Assets.Scripts.Nodes
 {
     public class HighLightCell : MonoBehaviour
     {
-        [SerializeField]
         private List<GameObject> _highLightWalkablecells;
         public void Init()
         {

@@ -40,9 +40,20 @@ namespace Assets.Scripts.StartLevel
         //Порядок в уровне 2
         public void StartLevel()
         {
+            Init();
+            _playerManager = new PlayersManager();
+            _ui.SetPlayer(GetCurrentPlayer());
+        }
+        public void StartLevel(List<Player> players)
+        {
+            Init();
+            _playerManager = new PlayersManager(players);
+            _ui.SetPlayer(GetCurrentPlayer());
+        }
+
+        private void Init()
+        {
             _gridManager.Init();
-            _playerManager =new PlayersManager();
-            _ui.SetPlayer(GetCurrntPlayer());
         }
 
         public Transform GetTransformMap()
@@ -50,7 +61,24 @@ namespace Assets.Scripts.StartLevel
             return _gridManager.transform;
         }
 
-        public Player GetCurrntPlayer()
+        public Node GetNode(int x, int y)
+        {
+            return GridManager.GetNode(x, y);
+        }
+
+        public Node GetLegalNode(int x, int y)
+        {
+            Node node;
+            int i = 0;
+            do
+            {
+                i++;
+                node = GridManager.GetNode(x + i, y + i);
+            } while (!GridManager.CheckStopable(x + i, y + i));
+            return node;
+        }
+
+        public Player GetCurrentPlayer()
         {
             return _playerManager.GetCurrntPlayer();
         }
