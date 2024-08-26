@@ -41,7 +41,7 @@ namespace Assets.Scripts
             foreach (var player in _tilePlayerSetingsManager.GetTiles())
             {
                 var pName = string.IsNullOrEmpty(player.GetNamePlayer()) ? $"Игрок {i}" : player.GetNamePlayer();
-                players.Add(new Player(pName, player.GetColorPlayer(), i++, player.GetChips().Count));
+                players.Add(new Player(pName, player.GetColorPlayer(), player.GetChips().Count));
             }
             _levelManager.StartLevel(players);
         }

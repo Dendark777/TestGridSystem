@@ -13,5 +13,6 @@ namespace Assets.Scripts
         public static float MoveSpeed { get; private set; } = 5f;
         public static int MaxCountChip { get; private set; } = 15;
         public static int MaxCountPlayer { get; private set; } = 8;
+
     }
 }

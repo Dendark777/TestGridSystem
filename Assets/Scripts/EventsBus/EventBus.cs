@@ -9,6 +9,7 @@ namespace Assets.Scripts
     public class EventBus
     {
         private Dictionary<Type, List<Action<object>>> eventDictionary = new Dictionary<Type, List<Action<object>>>();
+        private Dictionary<Type, List<Action<object>>> eventDictionaryOnce = new Dictionary<Type, List<Action<object>>>();
         
         private static EventBus instance;
         public static EventBus Instance
@@ -30,6 +31,16 @@ namespace Assets.Scripts
             }
             eventDictionary[eventType].Add(listener);
         }
+        
+        public void SubscribeOnce<T>(Action<object> listener)
+        {
+            var eventType = typeof(T);
+            if (!eventDictionaryOnce.ContainsKey(eventType))
+            {
+                eventDictionaryOnce[eventType] = new List<Action<object>>();
+            }
+            eventDictionaryOnce[eventType].Add(listener);
+        }
 
         public void Unsubscribe<T>(Action<object> listener)
         {
@@ -37,6 +48,10 @@ namespace Assets.Scripts
             if (eventDictionary.ContainsKey(eventType))
             {
                 eventDictionary[eventType].Remove(listener);
+            }
+            if (eventDictionaryOnce.ContainsKey(eventType))
+            {
+                eventDictionaryOnce[eventType].Remove(listener);
             }
         }
 
@@ -49,6 +64,19 @@ namespace Assets.Scripts
                 {
                     listener.Invoke(eventData);
                 }
+            }
+
+            if (!eventDictionaryOnce.ContainsKey(eventType)) return;
+            
+            var listenersToRemove = new List<Action<object>>();
+            foreach (var listener in eventDictionaryOnce[eventType])
+            {
+                listener.Invoke(eventData);
+                listenersToRemove.Add(listener);
+            }
+            foreach (var listener in listenersToRemove)
+            {
+                Unsubscribe<T>(listener);
             }
         }
     }

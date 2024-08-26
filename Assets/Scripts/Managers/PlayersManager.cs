@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.EventsBus.PlayersEvents;
+using Assets.Scripts.Helpers.Parameters;
 using Assets.Scripts.StartLevel;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace Assets.Scripts.Players
         private void InitManager()
         {
             EventBus.Instance.Subscribe<NextPlayer>(NextPlayer);
-            _players.ForEach(p=>p.InitChip());
+            _players.ForEach(p=>p.InitChip(new CommandoParameters()));
             _currentPlayerIndex = -1;
             NextPlayer();
         }

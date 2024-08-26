@@ -14,5 +14,6 @@ namespace Assets.Scripts.Constants
         public static int CountMaxActions { get; private set; } = 2;
         public static int CountCellPerAction { get; private set; } = 2;
         public static string AnimatorPath { get; private set; } = "Animators/Humans/HumanAnimatorController";
+        public static string LogoPath { get; private set; } = "Sprites/Human/Logo";
     }
 }

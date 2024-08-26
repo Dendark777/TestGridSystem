@@ -36,11 +36,12 @@ namespace Assets.Scripts.Players
         public bool IsMove { get; private set; }
         public Node Node => _node;
 
-        public virtual void Init(Node node, Color playerColor)
+        public virtual void Init(Node node, Color playerColor, BaseParameters parameters)
         {
             SetNode(node);
             IsMove = false;
             InitComponents(playerColor);
+            InitBaseParameters(parameters);
         }
 
         private void InitComponents(Color playerColor)
@@ -49,15 +50,10 @@ namespace Assets.Scripts.Players
             HighLightPlayerColor.color = new Color(playerColor.r, playerColor.g, playerColor.b, 0.5f);
         }
 
-        protected void SpecificInitParameters(string name, Inventory inventory = null)
-        {
-            Name = name;
-            _inventory = inventory ?? new Inventory();
-            SelectWeapon(0);
-        }
-
         protected void InitBaseParameters(BaseParameters parameters)
         {
+            Name = parameters.Name;
+            _inventory = parameters.Inventory ?? new Inventory();
             MaxHealth = parameters.MaxHealth;
             _countMaxActions = parameters.CountMaxActions;
             _countCellPerAction = parameters.CountCellPerAction;
@@ -66,6 +62,7 @@ namespace Assets.Scripts.Players
             _event = GetComponent<ChipEvent>();
             _animation.SetAnimatorController(parameters.AnimatorPath);
             _countCurrentAction = _countMaxActions;
+            SelectWeapon(0);
         }
 
         public void StartTurn()

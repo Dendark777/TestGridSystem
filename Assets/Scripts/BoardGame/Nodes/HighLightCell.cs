@@ -25,11 +25,12 @@ namespace Assets.Scripts.Nodes
         public void SetHighLightCell(Vector3 position)
         {
             var cell = _highLightWalkablecells.FirstOrDefault(c => !c.activeSelf);
-            if (cell != null)
+            if (cell == null)
             {
-                cell.SetActive(true);
-                cell.transform.position = position;
+                return;
             }
+            cell.SetActive(true);
+            cell.transform.position = position;
         }
         public void ResetAllHighLightCell()
         {

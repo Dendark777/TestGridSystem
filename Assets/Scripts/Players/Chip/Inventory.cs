@@ -15,15 +15,16 @@ namespace Assets.Scripts.Players.Chip
         private List<Weapon> _weapons = new List<Weapon>();
         public int CountItem => CountWeapon;
         public int CountWeapon => _weapons.Count;
-
-
-
-        internal Inventory()
+        public Inventory()
         {
-            _weapons.Add(new Hands());
-            _weapons.Add(new Carabin());
-            _weapons.Add(new Pistol());
+            AddWeapon(new Hands());
+            AddWeapon(new Carabin());
+            AddWeapon(new Pistol());
+        }
 
+        public void AddWeapon(Weapon weapon)
+        {
+            _weapons.Add(weapon);
         }
 
         public List<string> GetNamesItem()
