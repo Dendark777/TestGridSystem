@@ -2391,7 +2391,7 @@ GameObject:
   - component: {fileID: 3028763425615619497}
   - component: {fileID: 213284064}
   m_Layer: 5
-  m_Name: PlayerSetings
+  m_Name: PlayerSetingsLobby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

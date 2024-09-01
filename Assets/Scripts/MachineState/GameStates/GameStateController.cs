@@ -16,7 +16,6 @@ namespace Assets.Scripts.MachineState.GameStates
         public void SetState(IState newState)
         {
             currentState?.ExitState();
-
             currentState = newState;
             currentState.EnterState();
         }

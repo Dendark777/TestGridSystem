@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.Scripts.MachineState
+namespace Assets.Scripts.EventsBus.GlobalGameEvents
 {
-    public interface IState
+    public interface IOnChangeSceneHotSeatLobby
     {
-        void EnterState();
-        void ExitState();
     }
 }
